@@ -6,7 +6,7 @@
 	var ie = (navigator.appVersion.indexOf("MSIE") !== -1) ? parseFloat(navigator.appVersion.split("MSIE")[1]) : 99;
 
 	$(function(){
-		
+
 		$('body').removeClass('preload');
 
 		if(ie > 10) {
@@ -60,7 +60,7 @@
 		// for Skill Graph Animate
 		var graph_height = $('.graph-skill').height(),
 			$graph_bars = $(".graph-skill li");
-		
+
 		$graph_bars.each(function(){
 			var $this = $(this),
 				$elm = $this.children("span.bar-title"),
@@ -101,16 +101,6 @@
 			});
 		};
 
-		
-		// ColorBox
-		$(".port_group").colorbox({
-			rel:'port_group',
-			transition:"fade",
-			scrolling:false,
-			returnFocus:false,
-			maxHeight:window.innerHeight-50,
-			maxWidth:window.innerWidth-50
-		});
 
 
 		// placeholders
@@ -144,7 +134,7 @@
 			$(this).addClass('active');
 		});
 
-
+/*
 		// Skin Choose Panel
 		$('div.skin-selector a#toggle-panel').click(function(){
 			$('div.skin-selector').toggleClass('openpanel');
@@ -176,7 +166,7 @@
 			bodyClass.forecolor = 'fc-'+$(this).attr('class');
 			$('span.h1-text').addClass(bodyClass.forecolor);
 		});
-
+*/
 		//IMG hover
 		$('.dwn-vcard').mouseover(function(){
 			$('.me').addClass('hover');
@@ -196,7 +186,7 @@
 			},400);
 		});
 
-		// Contact Form Validators
+		// 联系表单验证
 		var
 		emailPattern = /^[a-z0-9+_%.\-]+@(?:[a-z0-9\-]+\.)+[a-z]{2,6}$/i,
 		validateText = function (str,len){
