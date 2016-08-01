@@ -811,7 +811,7 @@
     -ms-transform: rotatey(-180deg);
     transform: rotatey(-180deg);
     background-image: url("images/myqr.png");
-    background-size: 100% 100%;
+    background-size: 80% 100%;
     background-position: center bottom;
     font-weight: bold;
     text-align: center;
