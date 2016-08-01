@@ -1107,6 +1107,7 @@
   .project-title a {
       text-decoration: none;
       font-size: 30px;
+      color: rgb(85, 26, 139);
   }
   section.portfolio_container ol {
       margin: 0;
