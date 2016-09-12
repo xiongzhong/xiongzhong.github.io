@@ -115,6 +115,9 @@ img {
 	color: #FFF;
 	font-size: 18px;
 }
+.on {
+	background: url(../images/register_btn.png);
+}
 .logoAndregister {
 	margin-top: 20px;
 }
@@ -187,7 +190,7 @@ img {
 	width: 24px;
 	height: 18px;
 	background: url('../images/bg.png') no-repeat  -29px -77px;
-	margin-top: 17px;
+	margin-top: 16px;
 	margin-right: 11px;
 }
 .t_news {
@@ -356,13 +359,37 @@ img {
     top: 0;
     left: 0;
 }
-#invest_btn {
-    background: url(../images/invest_btn.png) no-repeat;
-    display: inline-block;
-    width: 123px;
+a.invest_btn {
+	width: 123px;
     height: 43px;
-
+	border-radius: 2px;
+    display: inline-block;
+	line-height: 43px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	color: #fff;
 }
+
+.progress .fh_sum {
+	padding: 25px 0;
+	font-size: 18px;
+}
+.progress .fh_sum em {
+	color: #333333;
+}
+.on1 {
+	background-color: #FF4F3F;
+}
+.on2 {
+	background-color: #FF8F13;
+}
+.on3 {
+	background-color: #C9C9C9;
+}
+
+
+
 .car_box_center {
     margin: 0 30px;
 }

@@ -190,3 +190,10 @@ a.invest_btn {
 .footer {
 	margin-top: 0;
 }
+.progress .fh_sum {
+	padding-top: 13px;
+	font-size: 18px;
+}
+.progress .fh_sum em {
+	color: #333333;
+}

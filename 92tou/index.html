@@ -87,8 +87,8 @@
                                     <h1>年化收益率</h1>
                                     <p style="margin-bottom:27px">最高可达 <strong style="font-size:20px">61%</strong></p>
                                     <p style="margin-bottom:17px"><strong style="font-size:24px">170 倍</strong>活期存款收益</p>
-                                    <a class="register_btn" href="http://92tou.com/user/toRegister" style="text-decoration: none;">立即注册</a>
-                                    <p class="logoAndregister">
+                                    <a class="register_btn on" id="register_btn" href="http://92tou.com/user/toRegister" style="text-decoration: none;">立即注册</a>
+                                    <p class="logoAndregister" id="logoAndregister">
                                         <a href="javascript:void(0)" style="text-decoration: none;">已有账号？</a>
                                         <a href="http://92tou.com/user/toLogin" target="_bank">立即登录</a>
                                     </p>
@@ -157,7 +157,6 @@
         </div>
 
 
-
         <!-- 主体内容 -->
         <div class="container">
             <!-- 车辆信息导航标题 -->
@@ -195,7 +194,7 @@
                             <span>每月租金</span>
                         </div>
                     </div>
-                    <div class="progress">
+                    <div class="progress" id="progiress1">
                         <p>
                             <span style="float:left">投资进度</span>
                             <span id="invest_progress" style="float:right">0%</span>
@@ -208,7 +207,7 @@
                             <span id="invest_sum" style="float:right">0 元</span>
                         </p>
                     </div>
-                    <a id="invest_btn" href="javascrit:void(0)"></a>
+                    <a class="invest_btn on1" id="invest_btn1" href="javascrit:void(0)">立即投资</a>
                 </div>
 
 
@@ -232,7 +231,7 @@
                             <span>每月租金</span>
                         </div>
                     </div>
-                    <div class="progress">
+                    <div class="progress" id="progiress2">
                         <p>
                             <span style="float:left">投资进度</span>
                             <span id="invest_progress" style="float:right">0%</span>
@@ -245,7 +244,7 @@
                             <span id="invest_sum" style="float:right">0 元</span>
                         </p>
                     </div>
-                    <a id="invest_btn" href="javascrit:void(0)"></a>
+                    <a class="invest_btn on1" id="invest_btn2" href="javascrit:void(0)">立即投资</a>
                 </div>
 
 
@@ -270,7 +269,7 @@
                             <span>每月租金</span>
                         </div>
                     </div>
-                    <div class="progress">
+                    <div class="progress" id="progiress3">
                         <p>
                             <span style="float:left">投资进度</span>
                             <span id="invest_progress" style="float:right">0%</span>
@@ -283,7 +282,7 @@
                             <span id="invest_sum" style="float:right">0 元</span>
                         </p>
                     </div>
-                    <a id="invest_btn" href="javascrit:void(0)"></a>
+                    <a class="invest_btn on1" id="invest_btn3" href="javascrit:void(0)">立即投资</a>
                 </div>
 
             </div>
@@ -320,20 +319,10 @@
                             <span>每月租金</span>
                         </div>
                     </div>
-                    <div class="progress">
-                        <p>
-                            <span style="float:left">投资进度</span>
-                            <span id="invest_progress" style="float:right">0%</span>
-                        </p>
-                        <p id="progress_box">
-                            <span class="yellow" id="yellow4"></span>
-                        </p>
-                        <p>
-                            <span style="float:left">剩余金额</span>
-                            <span id="invest_sum" style="float:right">0 元</span>
-                        </p>
+                    <div class="progress" id="progiress4">
+                        <p class="fh_sum">累计分红金额：<em>32467元</em></p>
                     </div>
-                    <a id="invest_btn" href="javascrit:void(0)"></a>
+                    <a  class="invest_btn on2" id="invest_btn4" href="javascrit:void(0)">立即投资</a>
                 </div>
 
 
@@ -358,7 +347,7 @@
                             <span>每月租金</span>
                         </div>
                     </div>
-                    <div class="progress">
+                    <div class="progress" id="progiress5">
                         <p>
                             <span style="float:left">投资进度</span>
                             <span id="invest_progress" style="float:right">0%</span>
@@ -371,7 +360,7 @@
                             <span id="invest_sum" style="float:right">0 元</span>
                         </p>
                     </div>
-                    <a id="invest_btn" href="javascrit:void(0)"></a>
+                    <a class="invest_btn on1" id="invest_btn5" href="javascrit:void(0)">立即投资</a>
                 </div>
 
 
@@ -396,7 +385,7 @@
                             <span>每月租金</span>
                         </div>
                     </div>
-                    <div class="progress">
+                    <div class="progress" id="progiress6">
                         <p>
                             <span style="float:left">投资进度</span>
                             <span id="invest_progress" style="float:right">0%</span>
@@ -409,7 +398,7 @@
                             <span id="invest_sum" style="float:right">0 元</span>
                         </p>
                     </div>
-                    <a id="invest_btn" href="javascrit:void(0)"></a>
+                    <a class="invest_btn on3" id="invest_btn6" href="javascrit:void(0)">立即投资</a>
                 </div>
 
             </div>
@@ -431,8 +420,9 @@
 
             </div>
             <div class="shouyibanner">
-
-                <img src="images/shouyibanner.jpg" alt="">
+                <a href="javascript:void(0)">
+                    <img src="images/shouyibanner.jpg" alt="">
+                </a>
             </div>
 
             <!-- 公司动态 -->
@@ -596,12 +586,27 @@
                 autoPlay: true
             });
 
-            // 进度条
-            function progress(element, value) {
-                element.css({
-                    width: value + "%"
-                })
+            $(".on1").html("立即投资");
+            $(".on2").html("分红中");
+            $(".on3").html("已结束");
+
+
+            var flage = true;
+            // 如果登陆成功
+            if (!true) {
+                $("#register_btn").html("进入我的账户");
+                $("#register_btn").addClass("on");
+                $("#register_btn").attr("href", "myHome.html"); //个人中心
+                $("#logoAndregister").hide();
+            } else {
+                $("#register_btn").html("立即注册");
+                $("#register_btn").attr("href", "register.html"); //注册页面地址
+                $("#register_btn").removeClass("on");
+                $("#logoAndregister").show();
             }
+
+
+
 
         })
 

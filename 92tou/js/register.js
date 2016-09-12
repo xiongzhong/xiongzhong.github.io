@@ -182,7 +182,7 @@ $(function () {
     		YesAlert("注册成功", "../user/toLogin");
     	}else {
     		//  $("#Imgcode").attr('src','../user/graphical?'+Math.random());
-    		 alert(data.msg);
+    		//  alert(data.msg);
              return;
     	}
 
