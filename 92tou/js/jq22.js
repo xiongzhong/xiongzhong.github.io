@@ -9,12 +9,12 @@ function b(){
 		x=y;
 		y=z;
 	}
-	setTimeout(b,3000);//滚动间隔时间 现在是3min
+	setTimeout(b,3000);//滚动间隔时间 现在是3s
 }
 $(document).ready(function(){
 	$('.swap').html($('.news_li').html());
 	x = $('.news_li');
 	y = $('.swap');
 	h = $('.news_li li').length * 19; //19为每个li的高度
-	setTimeout(b,3000);//滚动间隔时间 现在是3min
+	setTimeout(b,3000);//滚动间隔时间 现在是3s
 })
