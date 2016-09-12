@@ -7,6 +7,16 @@
         <link rel="stylesheet" type="text/css" href="css/header.css">
         <link rel="stylesheet" type="text/css" href="css/footer.css">
         <link rel="stylesheet" href="css/register.css" media="screen" title="no title">
+        <style media="screen">
+        .phoneCode p {
+            width: 87.38px;
+            box-sizing: border-box;
+        }
+        .invite {
+            width: 87.38px;
+            box-sizing: border-box;
+        }
+        </style>
     </head>
     <body>
         <div class="header">
@@ -20,8 +30,8 @@
                     <li><a class="weibo" href="http://weibo.com/jiuaitou" target="_bank"></a></li>
                     <li><a class="weixin" href="javascript:void(0)"></a></li>
                     <li><a class="service" href="http://wpa.qq.com/msgrd?v=3&uin=2582983669&site=qq&menu=yes" target="_bank">在线客服</a></li>
-                    <li><a class="login" href="http://92tou.com/user/toLogin" target="_bank">登录</a></li>
-                    <li><a class="register" href="http://92tou.com/user/toRegister" target="_bank">注册</a></li>
+                    <li><a class="login" href="login.html" target="_bank">登录</a></li>
+                    <li><a class="register" href="register.html" target="_bank">注册</a></li>
                     <span class="fuwuhao"></span>
                     <div class="hello">
                         <span class="name">187****1245 欢迎您</span>
@@ -60,7 +70,7 @@
                     </div>
                     <div class="input_box">
                         <div class="form_box phoneCode">
-                            <p>验证码&nbsp;&nbsp;&nbsp;<em>*</em></p>
+                            <p>验证码<em>*</em></p>
                             <input class="input" id="phoneCode" type="text" placeholder="请输入手机验证码">
                         </div>
                         <a id="sendCode" href="javascript:void(0)">获取短信验证码</a>
@@ -82,7 +92,7 @@
                     </div>
                     <div class="input_box">
                         <div class="form_box pwd_box">
-                            <p>邀请人&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                            <p class="invite">邀请人</p>
                             <input class="input" id="invatecode" type="text" placeholder="请输入邀请码（选填）">
                         </div>
                     </div>
