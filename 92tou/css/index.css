@@ -175,14 +175,20 @@ img {
     margin: 0 auto;
 }
 .box p {
-    background: url('../images/bg.png') no-repeat  -29px -77px;
-    text-indent: 37px;
-    display: inline-block;
+	float: left;
     width: 275px;
     height: 18px;
-    margin-top: 12px;
+    margin-top: 15px;
 	font-size: 14px;
 	color: #5E5E5E;
+}
+.new_icon {
+	float: left;
+	width: 24px;
+	height: 18px;
+	background: url('../images/bg.png') no-repeat  -29px -77px;
+	margin-top: 17px;
+	margin-right: 11px;
 }
 .t_news {
     position: absolute;
@@ -287,10 +293,11 @@ img {
     width: 196px;
     height: 106px;
     margin: 0 auto;
+	overflow: hidden;
 }
 .prospective_yield b {
     display: block;
-    padding-top: 8px;
+    margin-top: 8px;
     font-size: 50px;
     color: #FF2C3C;
 }

@@ -134,7 +134,7 @@
 	font-size: 14px;
 	color: #A5A5A5;
 }
-#start_sum,#rent {
+.start_sum,.rent {
 	font-size: 18px;
 }
 .progress {
