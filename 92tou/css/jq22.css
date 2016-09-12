@@ -1,0 +1,9 @@
+
+
+ul,li{ list-style:none;}
+.box{ height:35px;}
+.t_news{ height:19px;  color:#5E5E5E; padding-left:10px; margin:14px 0 0;overflow:hidden; position:relative;}
+.t_news p{ line-height:17px; display:inline-block;}
+.news_li,.swap{ line-height:17.5px; display:inline-block; position:absolute; top:0; left: 0;}
+.news_li a,.swap a{ color:#FF5256; font-size: 14px;}
+.swap{top:19px;}

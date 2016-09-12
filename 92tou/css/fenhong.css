@@ -1,0 +1,72 @@
+.container .wrap {
+	width: 920px;
+	float: left;
+	margin-left: 20px;
+	background-color: #FFFFFF;
+	border: 1px solid #E6E6E6;
+	padding-left: 16px;
+	margin-bottom: 55px;
+}
+.shop_details {
+	border-bottom: 1px solid #E6E6E6;
+	margin-top: 22px;
+	margin-bottom: 18px;
+}
+.car_details_title {
+	display: inline-block;
+	text-align: center;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #FF5256;
+	font-size: 16px;
+	color: #959595;
+	box-sizing: border-box;
+}
+.wrap table {
+	width: 897px;
+	font-size: 14px;
+	color: #9999A5;
+	margin-bottom: 41px;
+	border: 1px solid #E6E6E6;
+}
+.wrap table a {
+	color: #9999A5;
+}
+.wrap table tr {
+	height: 56px;
+	border-top: 1px solid #F2F2F2;
+}
+.wrap table td:nth-child(1) {
+	text-indent: 30px;
+}
+.wrap table tr:nth-child(odd) {
+	background-color: #F2F2F2;
+}
+.wrap table tr.table_head {
+	border: none;
+	background-color: #FFF4EC;
+	color: #5E5E5E;
+}
+.wrap table tr.end {
+	color: #CBCBCB;
+}
+
+.month_money {
+	width: 896px;
+	height: 56px;
+	background: #FFFAF5;
+	border-radius: 8px;
+	border: 1px solid #FF7A21;
+	margin-bottom: 25px;
+}
+.month_money div {
+	float: left;
+	width: 32%;
+	line-height: 56px;
+	text-indent: 31px;
+	color: #5E5E5E;
+	font-size: 14px;
+}
+.month_money .sum {
+	font-size: 16px;
+	color: #FF5256;
+}

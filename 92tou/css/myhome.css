@@ -1,0 +1,286 @@
+
+.main_container {
+	background-color: rgb(241, 242, 244);
+	height: 100%;
+	height: auto;
+	position: static;
+}
+
+.menu_left {
+	background-color: #fff;
+	margin-bottom: 20px;
+	width: 239px;
+	float:left;
+	border-left: 1px solid rgb(215, 217, 218);
+	border-right: 1px solid rgb(215, 217, 218);
+	border-bottom: 1px solid rgb(215, 217, 218);
+}
+
+.menu_left a {
+	color: black;
+}
+
+.menu_left .t {
+	font-size: 16px;
+	height: 55px;
+	line-height: 40px;
+	text-align: left;
+	border-top: 1px solid rgb(215, 217, 218);
+	border-bottom: 1px solid rgb(215, 217, 218);
+	padding-top: 10px;
+}
+
+.menu_left .t img {
+	height: 30px;
+	width: 30px;
+	margin-right: 10px;
+	margin-left: 30px;
+}
+
+.menu_left .item {
+	font-size: 14px;
+	text-align: left;
+	margin-left: 70px;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 10px;
+}
+.main {
+	float: right;
+	width: 940px;
+}
+.main .layout {
+	overflow: hidden;
+}
+.main_container .user_r {
+	width: 100%;
+	float:right;
+}
+
+.main_container .user_r .userinfo {
+	background-color: #fff;
+	height: 173px;
+	border: 1px solid rgb(215, 217, 218);
+	color: rgb(151, 151, 161);
+}
+.main_container .user_r .userinfo .userheader {
+	float: left;
+	width: 130px;
+	height: 158px;
+}
+.main_container .user_r .userinfo .userheader img {
+	width: 110px;
+	height: 110px;
+	margin: 25px 10px 10px 10px;
+}
+
+.main_container .user_r .userinfo .user {
+	text-align: left;
+	margin-top: 42px;
+	margin-bottom: 12px;
+	font-size: 18px;
+	line-height: 25px;
+}
+.main_container .user_r .userinfo .logo_msg {
+	float: left;
+	font-size:16px;
+	line-height: 49px;
+}
+.main_container .user_r .userinfo .logo_msg span {
+	float: left;
+}
+.main_container .user_r .userinfo .logo_msg .logo_icon {
+	float: left;
+	width: 120px;
+	height: 49px;
+	margin: 0 26px;
+}
+.main_container .user_r .userinfo p span {
+	color: red;
+	font-size: 22px;
+	margin-right: 10px;
+}
+
+.main_container .user_r .accountinfo {
+	margin-top: 15px;
+	background-color: #fff;
+	border: 1px solid rgb(215, 217, 218);
+}
+
+.main_container .accountinfo .balance_info {
+	height: 100px;
+	overflow: hidden;
+	padding-left: 10px;
+	border-bottom: 1px dotted rgb(217, 218, 219);
+}
+
+.main_container .accountinfo .balance {
+	line-height: 100px;
+	float: left;
+	font-size: 16px;
+	margin-left: 20px;
+}
+.main .fr{
+	float:right;
+	text-align:center;
+}
+.main_container .accountinfo .btn_balance {
+	float: left;
+	margin-left: 30px;
+	padding-top: 26px;
+}
+
+.main_container .accountinfo .btn_balance img{
+	margin-left: 50px;
+}
+.main_container .accountinfo .btn_balance a {
+	display: inline-block;
+}
+
+.main_container .accountinfo .balance span {
+	color: #444444;
+	font-size: 18px;
+}
+.btn {
+	border-radius: 3px;
+}
+
+.main_container .accountinfo .income {
+	color: rgb(151, 151, 161);
+	height: 98px;
+	padding: 10px 0 10px 10px;
+}
+.main_container .accountinfo .income li {
+	width: 270px;
+	height: 49px;
+	line-height: 49px;
+	float: left;
+	text-align: left;
+	font-size: 14px;
+	margin-left: 20px;
+}
+
+.main_container .accountinfo .income li span {
+	color: #444444;
+	font-size: 14px;
+}
+.banner_img {
+	width: 938px;
+	display: inline-block;
+	padding-top: 20px;
+	padding-bottom: 18px;
+	background-color: #FFFFFF;
+	border-left: 1px solid #E6E6E6;
+	border-right: 1px solid #E6E6E6;
+}
+.banner_img img {
+	width: 100%;
+	height: 125px;
+}
+.calendar {
+	width: 938px;
+	height: 436px;
+	border: 1px solid #E6E6E6;
+	border-top: none;
+	background-color: #ffffff;
+	margin-bottom: 78px;
+}
+.calendar_center {
+	width: 866px;
+	height: 432px;
+	margin-left: 33px;
+	background: url(../images/calendar_bg.png);
+}
+.calendar_left {
+	float: left;
+	width: 540px;
+	height: 405px;
+	margin-left: 13px;
+	margin-top: 10px;
+	color: #4C4C4C;
+}
+.calendar_left .date_title {
+	height: 96px;
+	text-align: center;
+	line-height: 96px;
+	font-size: 24px;
+	margin-bottom: 43px;
+}
+.calendar_left .date_table {
+	width: 100%;
+}
+.calendar_left .date_table table {
+	width: 480px;
+	height: 260px;
+	font-size: 19px;
+	text-align: center;
+	margin-left: 30px;
+}
+.calendar_left .date_table table .today {
+	color: #FFFFFF;
+	background: url(../images/date_bg.png) no-repeat center center;
+}
+.calendar_left .date_table table .refundDay {
+	color: #E12D2D;
+}
+.calendar_left .date_table table .same {
+	color: #E12D2D;
+	position: relative;
+}
+.same::before {
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: 16px;
+	display: block;
+	width: 33px;
+	height: 33px;
+	border: 2px solid #FF7A21;
+	border-radius: 50%;
+}
+.calendar_right {
+	float: right;
+	width: 301px;
+	height: 405px;
+	margin-top: 10px;
+	margin-right: 12px;
+}
+.calendar_right .month_return_money {
+	font-size: 13px;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 45px;
+	color: #999999;
+}
+.calendar_right .month_return_money span {
+	color: #FF5256;
+}
+.calendar_right .today_date {
+	float: left;
+	width: 138px;
+	height: 149px;
+	margin-left: 75px;
+	text-align: center;
+}
+.calendar_right .today_date p {
+	text-align: left;
+	text-indent: 19px;
+	font-size: 18px;
+	color: #98A0AC;
+	margin-top: 10px;
+}
+.calendar_right .today_date span {
+	font-size: 69px;
+	color: #FFA06B;
+	line-height: 70px;
+}
+.calendar_right .return_money {
+	clear: both;
+	font-size: 13px;
+	color: #999999;
+	padding: 46px 30px;
+	text-indent: 83px;
+}
+.calendar_right .return_money span {
+	color: #FF5256;
+}

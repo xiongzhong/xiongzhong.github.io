@@ -1,0 +1,489 @@
+
+.main {
+	width: 100%;
+	background-color: #FFF;
+}
+
+/**banner***********************/
+.ck-slide {
+	width: 100%;
+	height: 382px;
+	margin: 0 auto;
+}
+.ck-slide ul.ck-slide-wrapper {
+	width: 100%;
+	height: 382px;
+}
+img {
+	border: 0;
+}
+.ck-slide ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.ck-slide {
+	position: relative;
+	overflow: hidden;
+}
+.ck-slide ul.ck-slide-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+}
+.ck-slide ul.ck-slide-wrapper li {
+	position: absolute;
+}
+.ck-slidebox {
+	position: absolute;
+	left: 50%;
+	bottom: 7px;
+	z-index: 5;
+}
+.ck-slidebox ul {
+	height: 20px;
+	padding: 0 4px;
+}
+.ck-slidebox ul li {
+	float: left;
+	height: 23px;
+	margin: 4px 4px;
+}
+.ck-slidebox ul li em {
+	display: block;
+	width: 23px;
+	height:23px;
+	margin: 0 29px;
+	background: url(../images/point_num.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+.ck-slidebox ul li.current em {
+	background: url(../images/point_num_active.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+
+/*登录注册*/
+.netMonitor_wrap {
+	width: 302px;
+	position: absolute;
+	top: 42px;
+	left: 50%;
+	z-index: 10;
+	margin-left: 280px;
+	/*margin-left: -600px;*/
+}
+.netMonitor {
+	border-radius: 5px;
+	width: 302px;
+	height: 319px;
+	float: right;
+	background: rgba(0,0,0,0.5);/*firefox、chrome*/
+	background: #000\9;/*IE*/
+	filter: alpha(opacity=50);/*IE*/
+	text-align: center;
+	font-family: "微软雅黑";
+	color: #FFF;
+}
+.content{
+	position:relative;
+}
+.netMonitor h1 {
+	margin-top: 43px;
+	margin-bottom: 39px;
+	font-size: 30px;
+}
+.netMonitor p {
+	font-size: 16px;
+}
+.netMonitor strong {
+	color: #FC8026;
+}
+.register_btn {
+	background: url(../images/bg.png) no-repeat -74px -24px;
+	display: inline-block;
+	width: 230px;
+	height: 42px;
+	line-height: 42px;
+	color: #FFF;
+	font-size: 18px;
+}
+.logoAndregister {
+	margin-top: 20px;
+}
+.logoAndregister>a:first-child {
+	font-size: 12px;
+	color: #BBC4CF;
+}
+.logoAndregister>a:first-child + a {
+	font-size: 14px;
+	color: #FFF;
+}
+
+
+
+.describe {
+	width: 1200px;
+	height: 149px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+
+.describe .list {
+    float: left;
+    width: 300px;
+    height: 47px;
+    margin-top: 58px;
+    color: #474E5D;
+}
+.describe .list .icon {
+    float: left;
+    margin-right: 20px;
+	margin-top: 5px;
+}
+.describe .list .describe_txt {
+    margin-top: 5px;
+}
+.sescribe .list h5 {
+	font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+}
+.describe_txt p {
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.sorn {
+    margin-top: 2px;
+    background: #FFF;
+}
+
+.box {
+    width: 1200px;
+    height:48px;
+    padding-left: 11px;
+    position: relative;
+    margin: 0 auto;
+}
+.box p {
+    background: url('../images/bg.png') no-repeat  -29px -77px;
+    text-indent: 37px;
+    display: inline-block;
+    width: 275px;
+    height: 18px;
+    margin-top: 12px;
+	font-size: 14px;
+	color: #5E5E5E;
+}
+.t_news {
+    position: absolute;
+    top: 0;
+    left: 288px;
+    width: 908px;
+    vertical-align: top;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.item_nav {
+    width: 1192px;
+    height: 50px;
+    background: #FBFCFC;
+    margin: 30px 0 18px;
+    padding-left: 8px;
+	border-bottom: 1px solid #E6E6E6;
+
+}
+.item_nav .car_icon1 {
+    background: url('../images/bg.png') no-repeat  -88px -91px;
+    float: left;
+    width: 139px;
+    height: 40px;
+    margin-top: 5px;
+
+}
+.nav_list {
+    float: right;
+    width: 995px;
+    height: 51px;
+    line-height: 51px;
+}
+.nav_list span {
+    background: url('../images/bg.png') no-repeat -41px -276px;
+    width: 72px;
+    height: 22px;
+    float: left;
+    margin-right: 22px;
+    text-align: center;
+    line-height: 22px;
+    text-decoration: none;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #998EA8;
+}
+.nav_list .more {
+	font-size: 14px;
+    width: 81px;
+	height: 22px;
+    background: none;
+    float: right;
+    margin-right: 8px;
+    color: #474E5D;
+    margin-top: 8px;
+}
+.nav_list .more:hover {
+    color: #0099ff;
+    text-decoration: underline;
+}
+
+/*车辆信息*/
+.car_info {
+    width: 1200px;
+	height: 453px;
+    margin: 0 auto;
+    text-align: center;
+}
+.car_info .car_box {
+    width: 378px;
+    height: 451px;
+    background: #FFF;
+    border: 1px solid #DBDBDB;
+    float: left;
+}
+.car_box:hover {
+	box-shadow: 0 0 7px rgba(23, 23, 23, 0.3);
+}
+.car_info .car_box h3 {
+	font-weight: normal;
+    padding-top: 32px;
+    margin-bottom: 36px;
+    font-size: 18px;
+    color: #323232;
+    line-height: 24px;
+}
+.car_info .car_box h3 span {
+
+    background: url('../images/bg.png') no-repeat -41px -235px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    color: #FFFFFF;
+    vertical-align: top;
+	margin-right: 5px;
+}
+.prospective_yield {
+    background: url('../images/bg.png') no-repeat -108px -162px;
+    width: 196px;
+    height: 106px;
+    margin: 0 auto;
+}
+.prospective_yield b {
+    display: block;
+    padding-top: 8px;
+    font-size: 50px;
+    color: #FF2C3C;
+}
+.prospective_yield p {
+    font-size: 12px;
+    color: #A5A5A5;
+}
+.sum {
+    margin-top: 32px;
+    overflow: hidden;
+}
+.sum div {
+    width: 124.5px;
+    height: 50px;
+    float: left;
+}
+.sum>div:first-child + div {
+    border-right: 2px solid #E7E7E7;
+    border-left: 2px solid #E7E7E7;
+}
+.sum p {
+    font-size: 16px;
+    color: #323232;
+    margin-bottom: 5px;
+}
+.sum span {
+    font-size: 14px;
+    color: #A5A5A5;
+}
+.progress {
+    width: 100%;
+    margin-top: 20px;
+}
+.progress p {
+    display: inline-block;
+    width: 315px;
+    font-size: 14px;
+    color: #A5A5A5;
+    margin: 4px 0;
+}
+#progress_box {
+    display: inline-block;
+    width: 315px;
+    height: 9px;
+    background-color: #E6E6E6;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+.yellow {
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    background-color: #FC8026;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#invest_btn {
+    background: url(../images/invest_btn.png) no-repeat;
+    display: inline-block;
+    width: 123px;
+    height: 43px;
+
+}
+.car_box_center {
+    margin: 0 30px;
+}
+
+.car_icon2 {
+	background: url(../images/bg.png) no-repeat -504px -38px;
+	width: 139px;
+	height: 29px;
+	float: left;
+	margin-top: 5px;
+}
+
+.car_icon3 {
+	background: url('../images/bg.png') no-repeat -417px -97px;
+	width: 140px;
+	height: 28px;
+	float: left;
+	margin-top: 5px;
+}
+
+#corpusAndEarnings {
+    background: url('../images/bg.png') no-repeat -263px -103px;
+    width: 118px;
+    height: 22px;
+}
+.quanyizr {
+    width: 1198px;
+    height: 451px;
+    border: 1px solid #DBDBDB;
+    margin-bottom: 30px;
+    background: #FFFFFF;
+}
+.quanyizr .quanyizr_icon {
+    width: 100%;
+    height: 98px;
+    margin-top: 93px;
+    margin-bottom: 49px;
+    text-align: center;
+}
+
+.quanyizr h3 {
+    font-size: 30px;
+    color: #5E5E5E;
+    text-align: center;
+}
+.quanyizr p {
+    margin-top: 35px;
+    font-size: 24px;
+    color: #B1AFAF;
+    text-align: center;
+}
+.company_trends {
+    width: 100%;
+    height: 51px;
+    background: #F8F9FA;
+    margin-top: 29px;
+    margin-bottom: 19px;
+    overflow: hidden;
+}
+.company_trends .newbanner {
+    width: 49.5%;
+    float: left;
+
+}
+.company_trends .newbanner span {
+    float: left;
+    font-size: 18px;
+    color: #474E5D;
+    text-indent: 15px;
+    margin-top: 12px;
+    border-left: 2px solid #FF4F3F;
+}
+.newbanner_more {
+    font-size: 14px;
+    float: right;
+    margin-top: 14px;
+    margin-right: 46px;
+}
+.newbanner_more:hover {
+    color: #0099ff;
+}
+.newslist {
+    width: 100%;
+    height: 282px;
+    overflow: hidden;
+}
+.newslist_content {
+    width: 563px;
+    background-color: #FFFFFF;
+    float: left;
+    padding: 20px 35px 20px 0;
+}
+.newslist_content li {
+    line-height: 30px;
+    background: url(../images/6.png) no-repeat 19px 13px;
+    text-indent: 35px;
+    margin: 9px 0;
+}
+.newslist_content li a {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    font-size: 14px;
+    color: #474E5D;
+}
+.newslist_content li .list_left {
+    float: left;
+}
+.newslist_content li .list_right {
+    float: right;
+}
+.newslist_content li a:hover {
+    color: #FF4F3F;
+}
+.cooperationlogo {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 22px 0;
+}
+.cooperationlogo ul {
+    width: 100%;
+    overflow: hidden;
+}
+.cooperationlogo ul li {
+	margin-right: 10px;
+    display: inline-block;
+    *display:inline;
+	*zoom:1;
+}

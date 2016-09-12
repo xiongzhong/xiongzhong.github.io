@@ -1,0 +1,241 @@
+html,body {
+	width: 100%;
+	min-width: 1280px;
+}
+.nav {
+	border-bottom: 2px solid #E1E5E6;
+}
+.container {
+	width: 1200px;
+	min-width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+}
+.container .location {
+	padding: 25px 9px;
+	font-size: 14px;
+	color: #999999;
+}
+.container p .now_location {
+	color: #333333;
+}
+
+/*投资详情*/
+
+.carWrap {
+	width: 100%;
+	background-color: #FFF;
+	margin-bottom: 32px;
+}
+.carName {
+	padding-top: 32px;
+	padding-bottom: 18px;
+	font-size: 18px;
+	text-indent: 15px;
+	color: #5E5E5E;
+	border-bottom: 1px solid #E6E6E6;
+}
+.car_info {
+	height: 125px;
+	overflow: hidden;
+}
+.car_info div {
+	float: left;
+	text-align: center;
+}
+
+.sum_box1 .title_num {
+	display: inline-block;
+	width: 55px;
+	height: 55px;
+	font-size: 24px;
+	color: #5E5E5E;
+	line-height: 57px;
+	border: 2px solid #FF5256;
+	border-radius: 50%;
+	margin: 35px 20px 35px 35px;
+}
+.sum_box2 {
+	width: 150px;
+	padding-top: 25px;
+	margin-right: 40px;
+}
+.sum_box3 {
+	width: 200px;
+	padding-top: 25px;
+	margin-right: 50px;
+}
+.sum_box4 {
+	width: 250px;
+	padding-top: 25px;
+	margin-right: 40px;
+}
+.sum_box5 {
+	width: 150px;
+	padding-top: 25px;
+}
+.sum_box6 {
+	width: 200px;
+}
+.unit {
+	font-size: 16px;
+	color: #5C5C5C;
+}
+.sum_box5 .unit {
+	color: #FF4F3F;
+}
+.sum_text {
+	display: inline-block;
+	font-size: 16px;
+	color: #999999;
+	margin-top: 10px;
+}
+.total_sum {
+	font-size: 36px;
+	color: #5C5C5C;
+}
+.year_revenue {
+	font-size: 36px;
+	color: #FF4F3F;
+}
+.sum_box6 .rent_btn {
+	display: inline-block;
+	width: 123px;
+	height: 43px;
+	font-size: 18px;
+	color: #FFFFFF;
+	background: #FF4F3F;
+	border-radius: 2px;
+	line-height: 43px;
+	margin-top: 40px;
+	margin-left: 16px;
+	text-decoration: none;
+}
+
+
+/*回款记录*/
+
+.car_details {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 40px 4px 0 0;
+	margin-top: 17px;
+	background-color: #FFF;
+	overflow: hidden;
+}
+.shop_details {
+	width: 100%;
+	border-bottom: 1px solid #E6E6E6;
+	padding-left: 20px;
+}
+.car_details_title {
+	display: inline-block;
+	width: 112px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #FF5256;
+	font-size: 16px;
+	color: #959595;
+	box-sizing: border-box;
+}
+.details_content {
+	width: 100%;
+	font-size: 14px;
+	color: #959595;
+	overflow: hidden;
+}
+.details_list1,.details_list2,.details_list3,.details_list4 {
+	width: 21.8%;
+	float: left;
+	padding-left: 38px;
+}
+.details_table {
+	margin: 40px 0;
+}
+.details_table span {
+	display: inline-block;
+	margin-right: 10px;
+}
+.details_list3 span {
+	margin-left: 20px;
+}
+.details_list4 .rent_old {
+	display: inline-block;
+	margin-left: 50px;
+}
+.details_table em, .details_table a {
+	color: #5E5E5E;
+	text-align: right;
+}
+
+.certificate {
+	width: 100%;
+	padding: 0 30px;
+	overflow: hidden;
+	padding-top: 35px;
+	margin-bottom: 80px;
+}
+.certificate .certificate_img {
+	float: left;
+	margin: 0 13px;
+}
+.certificate .certificate_img img {
+	width: 200px;
+	height: 140px;
+	border: 1px solid #E6E6E6;
+}
+.certificate .certificate_img p {
+	margin: 15px 0;
+	font-size: 14px;
+	color: #5E5E5E;
+	text-align: center;
+}
+
+
+.fund_log {
+	width: 100%;
+	margin-bottom: 80px;
+}
+
+.fund_log table {
+	margin-top: 43px;
+	margin-left: 167px;
+	width: 836px;
+	text-align: center;
+	border: 1px solid #E6E6E6;
+	font-size: 14px;
+	color: #5E5E5E;
+}
+.fund_log table td {
+	padding: 0;
+	margin: 0;
+}
+.fund_log table tr {
+	height: 48px;
+}
+.fund_log table tr:nth-child(odd) {
+	height: 48px;
+	background: #F8F8F8;
+	border-top: 1px solid #F2F2F2;
+	border-bottom: 1px solid #F2F2F2;
+}
+.fund_log table tr.one_row {
+	background: #FFF4EC;
+}
+.GPS {
+	margin-top: 30px;
+	margin-bottom: 22px;
+	font-size: 14px;
+	color: #5E5E5E;
+	padding-left: 36px;
+}
+.GPS .GPS_state {
+	color: #C2C2C2;
+}
+.GPS_map {
+	margin-left: 36px;
+	margin-bottom: 80px;
+}
+.invest_table {
+	width: 100%;
+	height: 610px;
+}

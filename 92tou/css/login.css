@@ -1,0 +1,126 @@
+.container {
+	width: 100%;
+	height: 657px;
+	background: url(../images/login_page.png) no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+.container_center {
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.login_box {
+	width: 414px;
+	height: 347px;
+	background-color: #FEFCFA;
+	position: absolute;
+	top: 141px;
+	right: 34px;
+	box-shadow: 0 0 16px rgba(143, 102, 43, 0.35);
+}
+.login_title {
+	height: 61px;
+	border-bottom: 1px solid #E6E6E6;
+	overflow: hidden;
+}
+.account {
+	float: left;
+	font-size: 18px;
+	color: #555555;
+	margin-top: 21px;
+	margin-left: 24px;
+}
+.no_account,.start_register {
+	font-size: 14px;
+	float: right;
+	margin-top: 25px;
+}
+.no_account {
+	color: #999999;
+}
+.start_register {
+	color: #EF3B40;
+	margin-right: 20px;
+}
+.login_box input {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	font-family: "微软雅黑";
+}
+.phone_box {
+	width: 335px;
+	height: 51px;
+	background-color: #fff;
+	border: 1px solid #DCDCDC;
+	border-radius: 8px;
+	margin-top: 16px;
+	margin-left: 45px;
+	padding: 4px 0;
+	box-sizing: border-box;
+	clear: both;
+}
+.phone_box p {
+	float: left;
+	height: 100%;
+	line-height: 41px;
+	padding: 0 12px;
+	font-size: 14px;
+	color: #555555;
+	border-right: 1px solid #E6E6E6;
+}
+.phone_box p em {
+	color: #FF2F17;
+}
+.phone_box input {
+	height: 100%;
+	width: 245px;
+	text-indent: 9px;
+	font-size: 14px;
+}
+.pwd_box {
+	margin-top: 0;
+}
+.forget_pwd {
+	height: 47px;
+	line-height: 47px;
+}
+.forget_pwd a {
+	float: right;
+	font-size: 14px;
+	color: #EF3B40;
+	margin-right: 33px;
+}
+a.login_btn {
+	float: left;
+	width: 336px;
+	height: 53px;
+	margin-left: 44px;
+	background: url(../images/login_btn.png) no-repeat;
+	text-decoration: none;
+	color: #fff;
+	line-height: 51px;
+	text-align: center;
+	font-size: 18px;
+}
+.on {
+    box-shadow: 0 0 7px rgba(230, 137, 16, 0.48);
+}
+.msg {
+	height: 24px;
+	float: left;
+}
+.msg_txt {
+	float: left;
+	font-size: 14px;
+	line-height: 24px;
+	color: #FF2F17;
+	margin-left: 45px;
+	display: none;
+}
+.footer {
+	margin-top: 0;
+}
