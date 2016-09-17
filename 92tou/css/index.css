@@ -18,6 +18,8 @@
 .slide li {
 	width: 100%;
 	height: 380px;
+	background-size: cover;
+	background-position: top center;
 }
 .slide li a {
 	display: inline-block;
