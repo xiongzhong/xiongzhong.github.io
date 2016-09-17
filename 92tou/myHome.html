@@ -152,57 +152,57 @@
                         <div class="calendar_center">
                             <div class="calendar_left">
                                 <div class="date_title">
-                                    <p>2016&nbsp;年&nbsp;07&nbsp;月</p>
+                                    <p id="date">2016&nbsp;年&nbsp;07&nbsp;月</p>
                                 </div>
                                 <div class="date_table">
-                                    <table cellspacing="0" cellpadding="0">
+                                    <table id="date_table" cellspacing="0" cellpadding="0">
                                         <tr>
                                             <td></td>
                                             <td></td>
                                             <td></td>
                                             <td></td>
                                             <td></td>
-                                            <td>1</td>
-                                            <td>2</td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
                                         <tr>
-                                            <td>3</td>
-                                            <td>4</td>
-                                            <td>5</td>
-                                            <td>6</td>
-                                            <td>7</td>
-                                            <td class="today">8</td>
-                                            <td>9</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
                                         <tr>
-                                            <td>10</td>
-                                            <td>11</td>
-                                            <td>12</td>
-                                            <td>13</td>
-                                            <td>14</td>
-                                            <td  class="refundDay">15</td>
-                                            <td>16</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
                                         <tr>
-                                            <td>17</td>
-                                            <td>18</td>
-                                            <td>19</td>
-                                            <td>20</td>
-                                            <td>21</td>
-                                            <td>22</td>
-                                            <td class="same">23</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
                                         <tr>
-                                            <td>24</td>
-                                            <td>25</td>
-                                            <td>26</td>
-                                            <td>27</td>
-                                            <td>28</td>
-                                            <td>29</td>
-                                            <td>30</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
                                         <tr>
-                                            <td>31</td>
+                                            <td></td>
                                             <td></td>
                                             <td></td>
                                             <td></td>
@@ -215,11 +215,11 @@
                             </div>
                             <div class="calendar_right">
                                 <div class="month_return_money">
-                                    <p>2016年7月 回款本息：<span>0</span>元</p>
+                                    <p id="returnDate">2016年7月 回款本息：<span>0</span>元</p>
                                 </div>
                                 <div class="today_date">
-                                    <p class="week">星期二</p>
-                                    <span>19</span>
+                                    <p class="week" id="week">星期二</p>
+                                    <span id="today">19</span>
                                 </div>
                                 <div class="return_money">
                                     <p>回款本息：<span>0</span>元</p>
@@ -275,6 +275,7 @@
     <script src="js/headerAndnav.js" charset="utf-8"></script>
     <script type="text/javascript">
         $(function(){
+            // 导航菜单
             $(".list_title").click(function(){
                 $(".list_title").removeClass("menu_active");
                 $(this).addClass("menu_active");
@@ -283,10 +284,88 @@
                 $(".item").removeClass("list_row_active");
                 $(this).addClass("list_row_active")
             })
-            $("td").click(function() {
-                $(this).addClass("today");
+
+
+
+            var $date = $("#date");
+            var $dateTable = $("#date_table");
+            var $returnDate = $("#returnDate");
+            var $toDay = $("#today");
+            var $week = $("#week");
+            var tds = $dateTable.find("td");
+            var refundDay = 16; // 设置还款日
+
+            var weekday=new Array(7);
+            weekday[0]="星期日";
+            weekday[1]="星期一";
+            weekday[2]="星期二";
+            weekday[3]="星期三";
+            weekday[4]="星期四";
+            weekday[5]="星期五";
+            weekday[6]="星期六";
+
+            //用自定义变量保存当前系统中的年月日
+            var Today = new Date();
+            var tY = Today.getFullYear();
+            var tM = Today.getMonth() + 1;
+            var tD = Today.getDate();
+            var tW = Today.getDay();
+
+
+            $date.html(tY + "&nbsp;年&nbsp;" + tM + "&nbsp;月");
+            $returnDate.html(tY + "年" + tM + "月&nbsp;" + "回款本息：<span>0</span>元");
+            $toDay.html(tD);
+            $week.html(weekday[tW]);
+
+
+            Today.setDate(1);
+            var oneDay = Today.getDay(); //当月第一天是星期几
+            Today.setMonth(Today.getMonth() + 1); // 设置当前月份
+            var lastDate = new Date(Today - 3600000*24).getDate(); //当月最后一天
+
+
+            // 点击日历切换背景
+            tds.click(function() {
+                if ($(this).html() == "") {
+                    return;
+                } else if ($(this).html() == refundDay) {
+                    tds.removeClass("today");
+                    tds.removeClass("refundDay");
+                    $(this).addClass("same");
+                } else {
+                    // 设置还款日的样式
+                    tds.eq(oneDay + refundDay - 1).addClass("refundDay");
+
+                    tds.removeClass("same");
+                    tds.removeClass("today");
+                    $(this).addClass("today");
+                }
             })
 
+
+            tds.eq(oneDay + refundDay).html(refundDay);
+            tds.eq(oneDay + refundDay - 1).addClass("refundDay");
+
+
+            // 设置当天日期背景样式
+            for (var i = 0; i < oneDay + tD; i++) {
+                if (tD == refundDay) {
+                    tds.removeClass("today");
+                    tds.removeClass("refundDay");
+                    tds.eq(oneDay + tD - 1).addClass("same");
+                } else {
+                    // 设置还款日的样式
+                    tds.eq(oneDay + refundDay - 1).addClass("refundDay");
+                    tds.removeClass("today");
+                    tds.eq(oneDay + tD - 1).addClass("today");
+                }
+            }
+
+
+            // 填充日期
+            for (var i = 0; i < lastDate; i++) {
+                tds.eq(oneDay + i).html(i + 1)
+            }
 
 
         })

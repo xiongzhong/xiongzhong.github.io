@@ -230,13 +230,18 @@
 .same::before {
 	content: "";
 	position: absolute;
-	top: 3px;
-	left: 16px;
+	top: 50%;
+	left: 50%;
 	display: block;
 	width: 33px;
 	height: 33px;
 	border: 2px solid #FF7A21;
 	border-radius: 50%;
+	-webkit-transform: translate3d(-18px, -18.5px, 0);
+	-moz-transform: translate3d(-18px, -18.5px, 0);
+	-ms-transform: translate3d(-18px, -18.5px, 0);
+	-o-transform: translate3d(-18px, -18.5px, 0);
+	transform: translate3d(-18px, -18.5px, 0);
 }
 .calendar_right {
 	float: right;
