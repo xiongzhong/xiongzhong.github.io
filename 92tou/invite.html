@@ -2,12 +2,69 @@
 <html>
     <head>
         <meta charset="utf-8">
-		<title>就爱投-分红记录查看详情(车辆直租)</title>
+		<title>就爱投-邀请有礼</title>
 		<link rel="stylesheet" href="css/reset.css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/header.css">
         <link rel="stylesheet" type="text/css" href="css/footer.css">
         <link rel="stylesheet" href="css/myCenterMenu.css" media="screen" title="no title">
-        <link rel="stylesheet" href="css/fenhonginfo.css" media="screen" title="no title">
+        <link rel="stylesheet" href="css/base.css" media="screen" title="no title">
+        <link rel="stylesheet" href="css/manage.css" media="screen" title="no title">
+        <style>
+            .user_contain_r {
+                height: 747px;
+                padding: 0;
+                padding-left: 16px;
+                padding-top: 5px;
+            }
+            .user_contain_r .invest_title {
+                height: 50px;
+                line-height: 50px;
+                text-align: left;
+                color: rgb(151, 151, 161);
+                border-bottom: 1px solid rgb(215, 217, 218);
+            }
+            .user_contain_r .invest_title span {
+                display: inline-block;
+                border-bottom: 1px solid red;
+                font-size: 16px;
+                color: #959595;
+            }
+            .invite_code {
+                font-size:14px;
+                color:#5E5E5E;
+                text-align:left;
+                margin-top:20px;
+                margin-left:33px;
+            }
+            .invite_text {
+                font-size:12px;
+                width:682px;
+                height:87px;
+                box-sizing: border-box;
+                padding: 14px 19px 14px 33px;
+                text-align:left;
+                float:left;
+                color: #C9C9C9;
+                margin-top:6px;
+                margin-bottom:20px;
+                line-height: 20px;
+                overflow-y: hidden;
+                border-color: #E6E6E6;
+            }
+            .copy {
+                float: left;
+                background: url(images/copy_btn.png) no-repeat;
+                width: 123px;
+                height: 43px;
+                margin-left: 22px;
+                margin-top: 25px;
+            }
+            .invite_record_list .record {
+                margin: 0;
+                margin-top: 18px;
+            }
+
+        </style>
     </head>
     <body>
         <div class="header">
@@ -47,9 +104,8 @@
             </div>
         </div>
 
-
         <!-- 主体内容 -->
-        <div class="container">
+        <div class="container" style="margin-bottom:170px;">
             <div class="menu">
                 <div class="list_title my_account">
                     <a href="javascript:void(0)">
@@ -106,118 +162,48 @@
                 </div>
             </div>
 
-            <div class="wrap">
-                <div class="shop_details">
-                    <span class="car_details_title">粤B 564654></span>
-                    <span class="now_location">分红详情</span>
+            <div class="fr user_contain_r">
+
+               <div class="invest_title"><span>邀请注册</span></div>
+               <div class="invest_record_list">
+                   <div>
+                       <p class="invite_code">您的专属邀请码：<span id="Invitecode">6197</span></p>
+                       <div class="" style="overflow:hidden;">
+                           <textarea class="invite_text" id="content">就爱投—汽车权益众筹领导者品牌！全新的互联网金融投资方式，项目信息全流程透明 安全可靠有保证，预期年化收益 最高可达50%，收益高的不要不要的，不信就来，有你好看！我的专属邀请码4586，邀您前来体验，别让钱在银行里 继续缩水了！网站地址：http://92tou.com/
+                           </textarea>
+                           <a class="copy" onclick="jsCopy()" href="javascript:void(0)"></a>
+                       </div>
+                   </div>
+               </div>
+               <div class="invest_title"><span>邀请记录</span></div>
+               <div class="invite_record_list" id="invite_record_list" style="width:910px;">
+                    <table class="record">
+                        <tr class="one_row">
+                            <td>编号</td>
+                            <td>被推广人用户名</td>
+                            <td>手机号码</td>
+                            <td>收入</td>
+                            <td>日期</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                    </table>
                 </div>
-                <table class="invest_car" cellspacing="0" cellpadding="0">
-                    <tr class="table_head">
-                        <td>分红车辆</td>
-                        <td>投资金额</td>
-                        <td>分红次数</td>
-                        <td>累计分红金额</td>
-                    </tr>
-                    <tr>
-                        <td>粤B 564654</td>
-                        <td>10000.00元</td>
-                        <td>7次</td>
-                        <td>654684.65元</td>
-                    </tr>
-                </table>
-                <table cellspacing="0" cellpadding="0">
-                    <tr class="table_head">
-                        <td>分红次数</td>
-                        <td>分红日期</td>
-                        <td>本次分红金额</td>
-                        <td>平台服务费</td>
-                        <td>车辆保险费用</td>
-                        <td>车辆保养费</td>
-                        <td>汽车年检费用</td>
-                        <td>其他费用</td>
-                        <td>实际分红金额</td>
-                    </tr>
-                    <tr>
-                        <td>第7次</td>
-                        <td>2016.4.26 10:03</td>
-                        <td>100</td>
-                        <td>10</td>
-                        <td>0</td>
-                        <td>15</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>75</td>
-                    </tr>
-                    <tr>
-                        <td>第7次</td>
-                        <td>2016.4.26 10:03</td>
-                        <td>100</td>
-                        <td>10</td>
-                        <td>0</td>
-                        <td>15</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>75</td>
-                    </tr>
-                    <tr>
-                        <td>第7次</td>
-                        <td>2016.4.26 10:03</td>
-                        <td>100</td>
-                        <td>10</td>
-                        <td>0</td>
-                        <td>15</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>75</td>
-                    </tr>
-                    <tr>
-                        <td>第7次</td>
-                        <td>2016.4.26 10:03</td>
-                        <td>100</td>
-                        <td>10</td>
-                        <td>0</td>
-                        <td>15</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>75</td>
-                    </tr>
-                    <tr>
-                        <td>第7次</td>
-                        <td>2016.4.26 10:03</td>
-                        <td>100</td>
-                        <td>10</td>
-                        <td>0</td>
-                        <td>15</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>75</td>
-                    </tr>
-                    <tr>
-                        <td>第7次</td>
-                        <td>2016.4.26 10:03</td>
-                        <td>100</td>
-                        <td>10</td>
-                        <td>0</td>
-                        <td>15</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>75</td>
-                    </tr>
-                    <tr>
-                        <td>第7次</td>
-                        <td>2016.4.26 10:03</td>
-                        <td>100</td>
-                        <td>10</td>
-                        <td>0</td>
-                        <td>15</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>75</td>
-                    </tr>
-                </table>
-            </div>
+               <!-- <div id="pageNav"></div> -->
+
+           </div>
+           <!-- <div style="clear:both;"></div> -->
+
+
 
         </div>
+
 
         <!-- 页脚 -->
         <div class="footer">
@@ -261,16 +247,10 @@
     </body>
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/headerAndnav.js" charset="utf-8"></script>
+    <script src="js/invite.js" charset="utf-8"></script>
     <script type="text/javascript">
         $(function(){
-            $(".list_title").click(function(){
-                $(".list_title").removeClass("menu_active");
-                $(this).addClass("menu_active");
-            })
-            $(".item").click(function(){
-                $(".item").removeClass("list_row_active");
-                $(this).addClass("list_row_active")
-            })
+
 
 
         })

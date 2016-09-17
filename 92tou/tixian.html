@@ -2,12 +2,95 @@
 <html>
     <head>
         <meta charset="utf-8">
-		<title>就爱投-个人中心</title>
+		<title>就爱投-账户提现</title>
 		<link rel="stylesheet" href="css/reset.css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/header.css">
         <link rel="stylesheet" type="text/css" href="css/footer.css">
-        <link rel="stylesheet" href="css/myhome.css" media="screen" title="no title">
         <link rel="stylesheet" href="css/myCenterMenu.css" media="screen" title="no title">
+        <link rel="stylesheet" href="css/base.css" media="screen" title="no title">
+        <link rel="stylesheet" href="css/manage.css" media="screen" title="no title">
+        <style media="screen">
+            .border1px {
+                width: 898px;
+                height: 334px;
+                padding-top: 20px;
+                box-sizing: border-box;
+                font-size: 14px;
+                color: #555555;
+                text-align: center;
+            }
+            .center {
+                margin-left: 243px;
+                text-align: left;
+            }
+            .center .form_box input {
+                border: none;
+                outline: none;
+                width: 245px;
+                height: 40px;
+                line-height: 40px;
+                text-indent: 9px;
+                font-family: "微软雅黑";
+            }
+            .center .form_box {
+                height: 51px;
+            }
+            .center .form_box .input_box {
+                width: 359px;
+                height: 51px;
+                border: 1px solid #E6E6E6;
+                border-radius: 8px;
+                padding: 4px 0;
+                box-sizing: border-box;
+                float: left;
+            }
+            .center .form_box .news {
+                float: left;
+                line-height: 51px;
+                text-indent: 30px;
+                color: #EF3B40;
+                display: none;
+            }
+            .center .form_box .input_box span {
+                float: left;
+                width: 106px;
+                height: 100%;
+                text-align: center;
+                border-right: 1px solid #E6E6E6;
+                line-height: 43px;
+            }
+            .usable_sum {
+                padding: 37px 0;
+                padding-left: 10px;
+            }
+            .usable_sum .money_num {
+                font-size: 18px;
+                color: #EF3B40;
+            }
+            .usable_sum .unit {
+                color: #999999;
+            }
+            .border1px .drawMoney {
+                float: left;
+                background: url(images/qrtx.png) no-repeat;
+                background-size: 100% 100%;
+                margin-left: 358px;
+                width: 122px;
+                height: 43px;
+            }
+            .prompted {
+                height: auto;
+                padding-bottom: 20px;
+                padding-right: 34px;
+                margin-top: 29px;
+            }
+            .prompted ol {
+                padding-left: 12px;
+            }
+            .on {
+                box-shadow: 0 0 7px rgba(230, 137, 16, 0.48);
+            }
+        </style>
     </head>
     <body>
         <div class="header">
@@ -104,132 +187,53 @@
                     </a>
                 </div>
             </div>
+            <div class="fr user_contain_r">
 
-            <div class="main" style="margin-top:1px;">
-                <div class="main_container">
-                    <div class="layout">
-                        <div class="fr user_r">
-                           <div class="userinfo">
-                                <div class="userheader">
-                                    <img src="images/defaultheader.jpg" />
+                <div class="RightBox">
+                    <div class="memberBox pd20 clearfix">
+                        <div class="titleBox">
+                            <ul>
+                                <li class="cur"><a href="tixian.html">马上提现</a></li>
+                                <li><a href="chongzhijilu.html">提现记录</a></li>
+                            </ul>
+                        </div>
+                        <div class="border1px">
+                            <div class="center">
+                                <div class="usable_sum">
+                                    <span>可用提现金额&nbsp;：</span>
+                                    <span class="money_num">25000</span>
+                                    <span class="unit">元</span>
                                 </div>
-                                <p class="user"><span>亲爱的</span>主人您好！欢迎您回来！</p>
-                                <div class="logo_msg">
-                                    <span>账户：137****1235</span>
-                                    <div class="logo_icon">
-                                        <img src="images/logo_icon.png" alt="" />
+
+                                <div class="form_box">
+                                    <div class="input_box">
+                                        <span>提现金额&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                        <input type="text" id="moneyAmount" name="name" value="" placeholder="请输入要提现金额">
                                     </div>
-                                    <span>上次登录：2016-09-01 11:01:51</span>
+                                    <span class="news">请输入要提现金额</span>
                                 </div>
-                           </div>
-                           <div class="accountinfo">
-                               <div class="balance_info">
-                                   <div class="balance">
-                                        账户余额：<span>5467825.32元</span>
-                                   </div>
-                                   <div class="btn_balance">
-                                       <a href="toRecharge" ><img src="images/chongzhi.png"></a>
-                                       <a href="toWithdraw"><img src="images/tixian.png"></a>
-                                   </div>
-                               </div>
-                               <div class="income">
-                                   <ul>
-                                       <li>今日分红收益：<span>0元</span></li>
-                                       <li>本月分红收益：<span>10000.00元</span></li>
-                                       <li>累计分红收益：<span> 500000.00元</span></li>
-                                       <li>投资中（冻结金额）：<span>30000.00元</span></li>
-                                       <li>投资成功（分红中）：<span>156122.00元</span></li>
-                                       <li>总资产：<span style="font-size:16px;">156122.00元</span></li>
-                                   </ul>
-                               </div>
-                           </div>
-                           <a class="banner_img" href="javascript:void(0)">
-                               <img src="images/usercenter_safe.jpg" alt="" />
-                           </a>
-                        </div>
-                    </div>
-                    <div class="calendar">
-                        <div class="calendar_center">
-                            <div class="calendar_left">
-                                <div class="date_title">
-                                    <p>2016&nbsp;年&nbsp;07&nbsp;月</p>
-                                </div>
-                                <div class="date_table">
-                                    <table cellspacing="0" cellpadding="0">
-                                        <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td>1</td>
-                                            <td>2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>4</td>
-                                            <td>5</td>
-                                            <td>6</td>
-                                            <td>7</td>
-                                            <td class="today">8</td>
-                                            <td>9</td>
-                                        </tr>
-                                        <tr>
-                                            <td>10</td>
-                                            <td>11</td>
-                                            <td>12</td>
-                                            <td>13</td>
-                                            <td>14</td>
-                                            <td  class="refundDay">15</td>
-                                            <td>16</td>
-                                        </tr>
-                                        <tr>
-                                            <td>17</td>
-                                            <td>18</td>
-                                            <td>19</td>
-                                            <td>20</td>
-                                            <td>21</td>
-                                            <td>22</td>
-                                            <td class="same">23</td>
-                                        </tr>
-                                        <tr>
-                                            <td>24</td>
-                                            <td>25</td>
-                                            <td>26</td>
-                                            <td>27</td>
-                                            <td>28</td>
-                                            <td>29</td>
-                                            <td>30</td>
-                                        </tr>
-                                        <tr>
-                                            <td>31</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                    </table>
+                                <div class="usable_sum">
+                                    <span>手续费&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;：</span>
+                                    <span class="money_num" id="FeeAmount">12</span>
+                                    <span class="unit">元</span>
                                 </div>
                             </div>
-                            <div class="calendar_right">
-                                <div class="month_return_money">
-                                    <p>2016年7月 回款本息：<span>0</span>元</p>
-                                </div>
-                                <div class="today_date">
-                                    <p class="week">星期二</p>
-                                    <span>19</span>
-                                </div>
-                                <div class="return_money">
-                                    <p>回款本息：<span>0</span>元</p>
-                                </div>
-                            </div>
+                            <a href="javascript:void(0)" class="drawMoney" id="btnWithDraw"></a>
                         </div>
-                    </div>
+                        <div class="prompted">
+                            <h6>处理时间：</h6>
+                            <p>提现费用为3% 低于3元按3元计算 周一至周五每天10点，12点 ，15点 ，17点 ，20点 五个批次审核 星期六下午6点审核</p>
+                            <h6 style="margin-top: 20px;">到账时间：</h6>
+                            <ol>
+                                <li>15:00前申请提现，提现审核通过后T（提现申请日）+0日到账；15:00之后申请提现则T（提现申请日）+1日到账；法定节假日到账时间顺延至下一个 工作日。</li>
+                                <li>只有工、农、建、招、兴业、中行、交行、民生、中信、光大、平安、浦发12家银行支持周末提现到账，提现额度不变；其他银行暂未开通此项服务。</li>
+                            </ol>
+                        </div>
+                   </div>
                </div>
            </div>
         </div>
+
 
         <!-- 页脚 -->
         <div class="footer">
@@ -273,19 +277,9 @@
     </body>
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/headerAndnav.js" charset="utf-8"></script>
+    <script src="js/withdraw.js" charset="utf-8"></script>
     <script type="text/javascript">
         $(function(){
-            $(".list_title").click(function(){
-                $(".list_title").removeClass("menu_active");
-                $(this).addClass("menu_active");
-            })
-            $(".item").click(function(){
-                $(".item").removeClass("list_row_active");
-                $(this).addClass("list_row_active")
-            })
-            $("td").click(function() {
-                $(this).addClass("today");
-            })
 
 
 

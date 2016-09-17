@@ -1,0 +1,246 @@
+.icon-addCard{ width: 36px; height: 36px;background-position: -40px -60px;}
+.icon-qq{ width: 30px; height: 30px; background-position: 0 -330px; margin-right: 5px;}
+.cardBox{ width: 300px; height: 164px;margin:0 auto; background: #f5f5f5; border: 1px dashed #ccc;padding: 20px;}
+.cardBox .nocard{ text-align: center; padding-top: 48px; cursor: pointer;}
+.cardBox .nocard a:hover p{ color: #0099ff!important; text-decoration:underline;}
+.cardBox .haveCard{ padding-top: 15px;}
+.cardBox .haveCard .textBox{ line-height: 24px; font-size: 14px;margin-bottom: 8px;}
+.cardBox .haveCard .textBox .lBox{ display: inline-block; width: 96px; padding-right: 5px; line-height: 24px; text-align: right;}
+.cardBox .haveCard .textBox .rBox{ line-height: 24px;}
+.cardBox .haveCard .textBox .rBox img{ margin-right: 5px;vertical-align: middle;}
+.cardBox .haveCard .btnBox{ text-align: center; margin-top: 15px;}
+.cardBox .haveCard .btnBox a{ font-size: 12px; height: 22px; line-height: 22px; width: 55px; margin-right: 5px;}
+
+/*bindingCardBox*/
+.bindingCardBox .cardInfo{ padding-top: 20px;}
+/**/
+.formBox .Rtext{ height: 36px; line-height: 36px;}
+
+/*��ֵ*/
+
+.rechargeBox{ height: auto; margin-bottom: 22px;}
+.rechargeBox .Lbox{ float: left;width: 140px; height: 36px; line-height: 36px; font-size: 14px; text-align: center;}
+.rechargeBox .Rbox{ float: left;height: auto; width: 700px; padding-right: 30px;}
+.rechargeBox .Rbox .hbd{ width: 100%; height: 52px; overflow: hidden; margin-bottom: 22px;}
+.rechargeBox .Rbox .hbd ul{height: 50px; float: left; border: 1px solid #DCDCDC; text-align: left; overflow: hidden;}
+
+.rechargeBox .Rbox .hbd li{float: left; height: 50px; line-height: 50px; width: 194px; text-align: center; font-size: 14px; color: #666; cursor: pointer; margin: 0; display: inline-block;}
+.rechargeBox .Rbox .hbd li:nth-child(1) {border-right: 1px solid #DCDCDC;}
+.rechargeBox .Rbox .hbd li.cur{ background: #FFF6F0; height: 50px; width: 194px;}
+
+.rechargeBox .Rbox .bd .item{width: 697px;
+	display: none;
+}
+.rechargeBox .Rbox .bd .bankList{}
+.rechargeBox .Rbox .bd .bankList label{ display: inline-block; width: 123px; height: 40px; padding-left: 30px; margin-bottom: 20px; margin-left: 15px; cursor: pointer; position: relative; z-index: 10;}
+.rechargeBox .Rbox .bd .bankList label input{ position: absolute; top: 14px; left: 0;}
+.rechargeBox .Rbox .bd .bankList label img{ border: 1px solid #999;}
+
+
+
+
+
+
+
+
+.rechargeBox .Rbox .bd .item .banksBox {
+	padding-top: 9px;
+	border: 1px solid #E6E6E6;
+	/*display: none;*/
+}
+
+.fr{ float:right; text-align:center; }
+.main_container .accountinfo .btn_balance {
+    float: left;
+    margin-left: 30px;
+}
+.user_contain_r {
+    width: 940px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    color: rgb(151, 151, 161);
+	border: 1px solid #E6E6E6;
+}
+.border1px {
+    border: 1px solid #E6E6E6;
+}
+.border1px .invest_record_list {
+   padding-bottom:10px;
+}
+
+.border1px .invest_record_list a {
+    color: rgb(151, 151, 161);
+}
+
+.border1px .invest_record_list .title {
+    margin: 20px 10px 0px 10px;
+    background-color: rgb(225, 225, 226);
+    color: rgb(109, 109, 109);
+    border: 1px solid #ccc;
+    height: 40px;
+    width: 900px;
+    line-height: 40px;
+    display: inline-block;
+}
+
+.border1px .invest_record_list .title li {
+    width: 130px;
+    float: left;
+}
+
+.border1px .invest_record_list .item {
+    display: inline-block;
+    width: 900px;
+    margin: 0px 10px 0px 10px;
+}
+
+.border1px .invest_record_list .item li {
+    width: 130px;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+
+.border1px .money_record_list {
+    min-height: 500px;
+}
+
+.border1px .money_record_list .title {
+    margin: 20px 10px 0px 10px;
+    background-color: rgb(225, 225, 226);
+    color: rgb(109, 109, 109);
+    border: 1px solid #ccc;
+    height: 40px;
+    width: 900px;
+    line-height: 40px;
+    display: inline-block;
+}
+
+.border1px .money_record_list .title li {
+    width: 170px;
+    float: left;
+    font-size: 14px;
+
+}
+
+.border1px .money_record_list .item {
+    display: inline-block;
+    width: 900px;
+    margin: 0px 10px 0px 10px;
+}
+
+.border1px .money_record_list .item li {
+    width: 170px;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+}
+.inputBox {
+	float: left;
+	width: 356px;
+	height: 51px;
+	box-sizing: border-box;
+	padding: 4px 0;
+	border: 1px solid #DCDCDC;
+	border-radius: 8px;
+	overflow: hidden;
+}
+.inputBox input.input {
+	width:246px;
+	height: 100%;
+	outline: none;
+	border: none;
+	border-left: 1px solid #E6E6E6;
+}
+#kjzf {
+    width: 603px;
+    border: 1px solid #E6E6E6;
+    color: #5E5E5E;
+}
+#kjzf tr {
+    height: 38px;
+    font-size: 12px;
+    text-indent: 32px;
+}
+#kjzf tr:nth-child(odd) {
+    background-color: #F8F8F8;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+#kjzf tr.table_head {
+    background: #FFF4EC;
+    border: none;
+}
+.prompted {
+    width: 899px;
+    height: 124px;
+	box-sizing: border-box;
+    padding-top: 15px;
+    padding-left: 32px;
+    text-align: left;
+    background-color: #FFFAF5;
+    font-size: 12px;
+    color: #93888E;
+    border: 1px solid #E6E6E6;
+    line-height: 20px;
+	margin-top: 14px;
+}
+.prompted h6 {
+    font-size: 14px;
+    color: #5E5E5E;
+    font-weight: normal;
+    line-height: 25px;
+}
+#allbanklimit table {
+	width: 863px;
+	padding: 0;
+	border-collapse:collapse;
+	display: none;
+	margin-top: 15px;
+}
+#allbanklimit table tr {
+	height: 35px;
+}
+#allbanklimit table tr:nth-child(odd) {
+	background-color: #F8F8F8;
+}
+#allbanklimit table tr:nth-child(1) {
+	background: #FFF4EC;
+}
+#allbanklimit table, td{
+    border:1px solid #CCCCCC;
+}
+
+.on {
+    box-shadow: 0 0 7px rgba(230, 137, 16, 0.48);
+}
+
+
+.record {
+	margin-top: 15px;
+	margin-left: 19px;
+	width: 836px;
+	text-align: center;
+	border: 1px solid #E6E6E6;
+	font-size: 14px;
+	color: #5E5E5E;
+}
+.record td {
+	padding: 0;
+	margin: 0;
+}
+.record tr {
+	height: 48px;
+}
+.record tr:nth-child(odd) {
+	height: 48px;
+	background: #F8F8F8;
+	border-top: 1px solid #F2F2F2;
+	border-bottom: 1px solid #F2F2F2;
+}
+.record tr.one_row {
+	background: #FFF4EC;
+}

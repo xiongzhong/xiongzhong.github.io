@@ -4,5 +4,5 @@ li,ul{list-style:none;}
 .t_news p{display:inline-block;line-height:17px;}
 .news_li,.swap{position:absolute;top:0;left:0;display:inline-block;line-height:19px;}
 .t_news li{overflow:hidden;}
-.news_li a,.swap a{float:left;color:#ff5256;font-size:14px;line-height:19px;}
+.news_li a,.swap a{float:left;color:#ff5256;font-size:14px;line-height:19px;text-decoration: none;}
 .swap{top:19px;}

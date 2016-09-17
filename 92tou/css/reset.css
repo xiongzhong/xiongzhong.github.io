@@ -17,7 +17,7 @@ ul, ol, menu {
 
 
 /*重置列表元素*/
-ul, ol {
+ul {
     list-style: none;
 }
 

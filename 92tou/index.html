@@ -9,6 +9,12 @@
 		<link rel="stylesheet" href="css/index.css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/header.css">
         <link rel="stylesheet" type="text/css" href="css/footer.css">
+        <style media="screen">
+            .slide  li {
+                background-size: cover;
+                background-position: top center;
+            }
+        </style>
     </head>
     <body>
         <div class="header">
@@ -49,56 +55,36 @@
         </div>
         <div class="main">
             <div class="slide_box">
-                <div class="mianc">
-                    <!-- html -->
-                    <div class="ck-slide">
-                        <ul class="ck-slide-wrapper">
-                            <li>
-                                <a href="http://92tou.com/projectDetail/toprojectDetail?projectid=3" target="_bank"><img src="images/slide_01.jpg" alt=""></a>
-                            </li>
-                            <li style="display:none">
-                                <a href="http://92tou.com/projectDetail/toprojectDetailNew?projectid=4" target="_bank"><img src="images/slide_03.jpg" alt=""></a>
-                            </li>
-                            <li style="display:none">
-                                <a href="http://92tou.com/index/toKnewyzdg" target="_bank"><img src="images/slide_04.jpg" alt=""></a>
-                            </li>
-                            <li style="display:none">
-                                <a href="http://92tou.com/index/toInvite" target="_bank"><img src="images/slide_02.png" alt=""></a>
-                            </li>
-
-                            <li style="display:none">
-                                <a href="http://92tou.com/index/toSafety" target="_bank"><img src="images/slide_05.jpg" alt=""></a>
-                            </li>
+                <div class="bannerBox">
+                    <div class="items" id="idimages">
+                        <ul class="slide">
+                            <li style="background: url(images/slide_01.jpg) no-repeat center center;"><a href="http://92tou.com/projectDetail/toprojectDetail?projectid=3" target="_blank"></a></li>
+                            <li style="background: url(images/slide_03.jpg) no-repeat center center;"><a href="http://92tou.com/projectDetail/toprojectDetailNew?projectid=4" target="_blank"></a></li>
+                            <li style="background: url(images/slide_04.jpg) no-repeat center center;"><a href="http://92tou.com/index/toKnewyzdg" target="_blank"></a></li>
+                            <li style="background: url(images/slide_02.png) no-repeat center center;"><a href="http://92tou.com/index/toInvite" target="_blank"></a></li>
+                            <li style="background: url(images/slide_05.jpg) no-repeat center center;"><a href="http://92tou.com/index/toSafety" target="_blank"></a></li>
                         </ul>
-                        <div class="ck-slidebox">
-                            <div class="slideWrap">
-                                <ul class="dot-wrap">
-                                    <li class="current"><em>1</em></li>
-                                    <li><em>2</em></li>
-                                    <li><em>3</em></li>
-                                    <li><em>4</em></li>
-                                    <li><em>5</em></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="netMonitor_wrap">
-                            <div class="netMonitor">
-                                <div class="content">
-                                    <h1>年化收益率</h1>
-                                    <p style="margin-bottom:27px">最高可达 <strong style="font-size:20px">61%</strong></p>
-                                    <p style="margin-bottom:17px"><strong style="font-size:24px">170 倍</strong>活期存款收益</p>
-                                    <a class="register_btn on" id="register_btn" href="http://92tou.com/user/toRegister" style="text-decoration: none;">立即注册</a>
-                                    <p class="logoAndregister" id="logoAndregister">
-                                        <a href="javascript:void(0)" style="text-decoration: none;">已有账号？</a>
-                                        <a href="http://92tou.com/user/toLogin" target="_bank">立即登录</a>
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
+                    </div>
+                    <div class="bar">
+                        <ul></ul>
                     </div>
                 </div>
 
+
+                <div class="netMonitor_wrap">
+                    <div class="netMonitor">
+                        <div class="content">
+                            <h1>年化收益率</h1>
+                            <p style="margin-bottom:27px">最高可达 <strong style="font-size:20px">61%</strong></p>
+                            <p style="margin-bottom:17px"><strong style="font-size:24px">170 倍</strong>活期存款收益</p>
+                            <a class="register_btn on" id="register_btn" href="http://92tou.com/user/toRegister" style="text-decoration: none;">立即注册</a>
+                            <p class="logoAndregister" id="logoAndregister">
+                                <a href="javascript:void(0)" style="text-decoration: none;">已有账号？</a>
+                                <a href="http://92tou.com/user/toLogin" target="_bank">立即登录</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="describe">
                 <div class="list">
@@ -156,7 +142,6 @@
             </div>
         </div>
 
-
         <!-- 主体内容 -->
         <div class="container">
             <!-- 车辆信息导航标题 -->
@@ -167,7 +152,7 @@
                     <span>信息透明</span>
                     <span>安全可靠</span>
                     <span>每月分红</span>
-                    <a class="more" href="javascript:void(0)">查看更多 >></a>
+                    <a class="more" href="woyaotouzi.html">查看更多 >></a>
                 </div>
             </div>
 
@@ -293,7 +278,7 @@
                     <span>信息透明</span>
                     <span>安全可靠</span>
                     <span id="corpusAndEarnings">每月本金+分红</span>
-                    <a class="more" href="javascript:void(0)">查看更多 >></a>
+                    <a class="more" href="woyaotouzi.html">查看更多 >></a>
                 </div>
             </div>
 
@@ -406,7 +391,7 @@
             <div class="item_nav">
                 <span class="car_icon3"></span>
                 <div class="nav_list">
-                    <a class="more" href="javascript:void(0)">查看更多 >></a>
+                    <a class="more" href="woyaotouzi.html">查看更多 >></a>
                 </div>
             </div>
 
@@ -429,11 +414,11 @@
             <div class="company_trends">
                 <div class="newbanner">
                     <span >公司动态</span>
-                    <a class="newbanner_more" href="javascript:void(0)">查看更多 >></a>
+                    <a class="newbanner_more" href="woyaotouzi.html">查看更多 >></a>
                 </div>
                 <div class="newbanner">
                     <span style="margin-left:15px;">常见问题</span>
-                    <a class="newbanner_more" href="javascript:void(0)">查看更多 >></a>
+                    <a class="newbanner_more" href="woyaotouzi.html">查看更多 >></a>
                 </div>
             </div>
 
@@ -529,7 +514,7 @@
                     <li><img src="images/youbu.jpg"></li>
                     <li><img src="images/didi.jpg"></li>
                     <li><img src="images/yidao.jpg"></li>
-                    <li><img src="images/shenzhou.jpg"></li>
+                    <li><img src="images/dflogo.jpg"></li>
                     <li><img src="images/dazong.jpg"></li>
                 </ul>
             </div>
@@ -576,20 +561,26 @@
         </div>
     </body>
     <script src="js/jquery-1.8.3.min.js"></script>
-    <script src="js/slide.js"></script>
+    <script src="js/jquery.SuperSlide.2.1.1.js"></script>
     <script type="text/javascript" src="js/jq22.js"></script>
     <script src="js/headerAndnav.js" charset="utf-8"></script>
     <script type="text/javascript">
         $(function(){
-            // 滚动信息
-            $('.ck-slide').ckSlide({
-                autoPlay: true
+            $(".slide_box").slide({
+                titCell: ".bar ul",
+                mainCell: ".items ul",
+                autoPage: true,
+                effect: "fade",
+                autoPlay: true,
+                scroll: 1,
+                vis: 1,
+                interTime: 3000
             });
+            $(".bar ul li").html("");
 
             $(".on1").html("立即投资");
             $(".on2").html("分红中");
             $(".on3").html("已结束");
-
 
             var flage = true;
             // 如果登陆成功
