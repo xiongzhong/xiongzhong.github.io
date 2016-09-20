@@ -82,9 +82,6 @@
                     <a href="javascript:void(0)">资金明细</a>
                 </div>
                 <div class="list_row item">
-                    <a href="javascript:void(0)">我的银行卡</a>
-                </div>
-                <div class="list_row item">
                     <a href="javascript:void(0)">账户充值</a>
                 </div>
                 <div class="list_row item">
@@ -293,7 +290,8 @@
             var $toDay = $("#today");
             var $week = $("#week");
             var tds = $dateTable.find("td");
-            var refundDay = 16; // 设置还款日
+            var refundDay = [16, 19]; // 设置还款日
+
 
             var weekday=new Array(7);
             weekday[0]="星期日";
@@ -324,18 +322,18 @@
             var lastDate = new Date(Today - 3600000*24).getDate(); //当月最后一天
 
 
+
             // 点击日历切换背景
             tds.click(function() {
                 if ($(this).html() == "") {
                     return;
-                } else if ($(this).html() == refundDay) {
+                } else if ($(this).hasClass("refundDay") == true) {
+                    tds.removeClass("same");
                     tds.removeClass("today");
-                    tds.removeClass("refundDay");
                     $(this).addClass("same");
                 } else {
                     // 设置还款日的样式
-                    tds.eq(oneDay + refundDay - 1).addClass("refundDay");
-
+                    returnDay()
                     tds.removeClass("same");
                     tds.removeClass("today");
                     $(this).addClass("today");
@@ -343,22 +341,36 @@
             })
 
 
-            tds.eq(oneDay + refundDay).html(refundDay);
-            tds.eq(oneDay + refundDay - 1).addClass("refundDay");
+            // 设置回款日的样式
+            function returnDay(){
+                for (var i = 0; i < refundDay.length; i++) {
+                    tds.eq(oneDay + refundDay[i] - 1).addClass("refundDay");
+                }
+            }
+            returnDay();
+
+            // 设置回款日的内容
+            for (var i = 0; i < refundDay.length; i++) {
+                tds.eq(oneDay + refundDay[i]).html(refundDay[i]);
+            }
+
 
 
             // 设置当天日期背景样式
             for (var i = 0; i < oneDay + tD; i++) {
-                if (tD == refundDay) {
-                    tds.removeClass("today");
-                    tds.removeClass("refundDay");
-                    tds.eq(oneDay + tD - 1).addClass("same");
-                } else {
-                    // 设置还款日的样式
-                    tds.eq(oneDay + refundDay - 1).addClass("refundDay");
-                    tds.removeClass("today");
-                    tds.eq(oneDay + tD - 1).addClass("today");
+                for (var j = 0; j < refundDay.length; j++) {
+                    if (tD == refundDay[j]) {
+                        tds.removeClass("today");
+                        tds.eq(oneDay + refundDay[j] - 1).removeClass("refundDay");
+                        tds.eq(oneDay + refundDay[j] - 1).addClass("same");
+                    }  else {
+                        // 设置还款日的样式
+                        returnDay();
+                        tds.removeClass("today");
+                        tds.eq(oneDay + tD - 1).addClass("today");
+                    }
                 }
+
             }
 
 

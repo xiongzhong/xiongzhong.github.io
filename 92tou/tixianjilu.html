@@ -6,9 +6,9 @@
 		<link rel="stylesheet" href="css/reset.css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/header.css">
         <link rel="stylesheet" type="text/css" href="css/footer.css">
-        <link rel="stylesheet" href="css/myCenterMenu.css" media="screen" title="no title">
         <link rel="stylesheet" href="css/base.css" media="screen" title="no title">
         <link rel="stylesheet" href="css/manage.css" media="screen" title="no title">
+        <link rel="stylesheet" href="css/myCenterMenu.css" media="screen" title="no title">
     </head>
     <body>
         <div class="header">
@@ -81,9 +81,6 @@
                 </div>
                 <div class="list_row item">
                     <a href="javascript:void(0)">资金明细</a>
-                </div>
-                <div class="list_row item">
-                    <a href="javascript:void(0)">我的银行卡</a>
                 </div>
                 <div class="list_row item">
                     <a href="javascript:void(0)">账户充值</a>
@@ -191,15 +188,14 @@
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/headerAndnav.js" charset="utf-8"></script>
     <script type="text/javascript">
-        $(function(){
-
-
-
+        // 导航菜单
+        $(".list_title").click(function(){
+            $(".list_title").removeClass("menu_active");
+            $(this).addClass("menu_active");
         })
-
-
-
-
-
+        $(".item").click(function(){
+            $(".item").removeClass("list_row_active");
+            $(this).addClass("list_row_active")
+        })
     </script>
 </html>

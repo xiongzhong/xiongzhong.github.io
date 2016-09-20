@@ -5,24 +5,24 @@ $(function () {
     //hideAllBankLimit();
 
     //绑定银行
-	// var url = "../user/getPayBank?payCode=1";// 1 丰付接口 2 宝付接口 等等
-	// var data = CommnUtil.ajax(url, null,"json");
-	// if (data.code == 1) {
-    //
-	// 	var h = '';
-	// 	for ( var i = 0; i < data.data.length; i++) {
-	// 		var checked = '';
-	// 		if(i==0){
-	// 			checked = 'checked';
-	// 		}
-	// 		h+= '<label onclick="showLimitMoney('+ data.data[i].bankID +');" for="rdo'+ data.data[i].bankID +'"><input type="radio" name="bankgroup" id="rdo'+ data.data[i].bankID +'" value="'+ data.data[i].bankID +'" '+ checked +'><img src="'+ data.data[i].bankImgUrl +'"></label>';
-	// 	}
-	// 	$("#mybanks").html(h);
-    //
-	// }else {
-	// 	alert("获取银行失败");
-    //      return;
-	// }
+	var url = "../user/getPayBank?payCode=1";// 1 丰付接口 2 宝付接口 等等
+	var data = CommnUtil.ajax(url, null,"json");
+	if (data.code == 1) {
+
+		var h = '';
+		for ( var i = 0; i < data.data.length; i++) {
+			var checked = '';
+			if(i==0){
+				checked = 'checked';
+			}
+			h+= '<label onclick="showLimitMoney('+ data.data[i].bankID +');" for="rdo'+ data.data[i].bankID +'"><input type="radio" name="bankgroup" id="rdo'+ data.data[i].bankID +'" value="'+ data.data[i].bankID +'" '+ checked +'><img src="'+ data.data[i].bankImgUrl +'"></label>';
+		}
+		$("#mybanks").html(h);
+
+	}else {
+		alert("获取银行失败");
+         return;
+	}
 
 
     //切换

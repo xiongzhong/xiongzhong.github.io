@@ -6,9 +6,9 @@
 		<link rel="stylesheet" href="css/reset.css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/header.css">
         <link rel="stylesheet" type="text/css" href="css/footer.css">
-        <link rel="stylesheet" href="css/myCenterMenu.css" media="screen" title="no title">
         <link rel="stylesheet" href="css/base.css" media="screen" title="no title">
         <link rel="stylesheet" href="css/manage.css" media="screen" title="no title">
+        <link rel="stylesheet" href="css/myCenterMenu.css" media="screen" title="no title">
         <style>
             .user_contain_r {
                 height: 747px;
@@ -140,9 +140,6 @@
                     <a href="javascript:void(0)">资金明细</a>
                 </div>
                 <div class="list_row item">
-                    <a href="javascript:void(0)">我的银行卡</a>
-                </div>
-                <div class="list_row item">
                     <a href="javascript:void(0)">账户充值</a>
                 </div>
                 <div class="list_row item">
@@ -248,16 +245,25 @@
     </body>
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/headerAndnav.js" charset="utf-8"></script>
-    <script src="js/invite.js" charset="utf-8"></script>
     <script type="text/javascript">
-        $(function(){
 
 
-
+        // 导航菜单
+        $(".list_title").click(function(){
+            $(".list_title").removeClass("menu_active");
+            $(this).addClass("menu_active");
+        })
+        $(".item").click(function(){
+            $(".item").removeClass("list_row_active");
+            $(this).addClass("list_row_active")
         })
 
-
-
+        function jsCopy() {
+            var e = document.getElementById("content");//对象是content
+            e.select(); //选择对象
+            document.execCommand("Copy"); //执行浏览器复制命令
+            alert("已复制好，可贴粘。");
+        }
 
 
     </script>
