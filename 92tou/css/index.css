@@ -36,11 +36,14 @@
 }
 .bar ul li {
 	display: inline-block;
+	*display:inline;
+	*zoom:1;
 	width: 14px;
 	height: 14px;
 	margin: 0 12px;
 	background: url(../images/point_num.png) no-repeat;
 	background-size: 100% 100%;
+	background-position: center center;
 }
 
 .bar ul li.on {
@@ -50,14 +53,14 @@
 
 
 /*登录注册*/
-.netMonitor_wrap {
+.slide_box .netMonitor_wrap {
 	width: 302px;
 	position: absolute;
 	top: 42px;
 	left: 50%;
 	z-index: 10;
 	margin-left: 280px;
-	/*margin-left: -600px;*/
+	display: none;
 }
 .netMonitor {
 	border-radius: 5px;
@@ -261,14 +264,16 @@
     line-height: 24px;
 }
 .car_info .car_box h3 span {
-
     background: url('../images/bg.png') no-repeat -41px -235px;
-    width: 24px;
-    height: 24px;
+    padding: 0 2px;
     display: inline-block;
     color: #FFFFFF;
     vertical-align: top;
 	margin-right: 5px;
+	text-align: center;
+	overflow: hidden;
+	background: #FF2C3C;
+	border-radius: 4px;
 }
 .prospective_yield {
     background: url('../images/bg.png') no-repeat -108px -162px;
@@ -499,4 +504,7 @@ a.invest_btn {
     display: inline-block;
     *display:inline;
 	*zoom:1;
+}
+.shouyibanner a img {
+	border:0 none;
 }

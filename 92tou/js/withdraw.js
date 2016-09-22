@@ -1,7 +1,6 @@
 $(function () {
 	$("#moneyAmount").focus(function() { // 输入框阴影
 		$(this).parent().addClass("on");
-
 		$(".news").hide();
 	})
 	$("#moneyAmount").blur(function () {

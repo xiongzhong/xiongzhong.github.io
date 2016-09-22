@@ -23,7 +23,7 @@ ul {
 
 
 /*将字体扶正*/
-address, cite, dfn, em, var {
+address, cite, dfn, em, var, i {
     font-style: normal;
 }
 
@@ -38,7 +38,9 @@ a:hover {
     text-decoration: underline;
 }
 
-
+a img {
+    border: 0 none;
+}
 /*清浮动*/
 .clear:after {
     content: '';

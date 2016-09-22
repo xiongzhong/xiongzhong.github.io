@@ -79,9 +79,9 @@
                         </div>
                         <div class="invest_progress">
                             <span id="invest_progress">48%</span>
-                            <p>
+                            <p style="float:right;">
                                 <span>剩余可投份数：</span>
-                                <span id="remain_sum" style="float:right">100份</span>
+                                <span id="remain_sum">100份</span>
                             </p>
                         </div>
                     </div>
@@ -134,7 +134,7 @@
                         <span class="title_txt">投资回款计划</span>
                         <a class="close_btn" href="javascript:void(0)"></a>
                     </div>
-                    <table cellspacing="0" cellpadding="0">
+                    <table id="popupTable" cellspacing="0" cellpadding="0">
                         <tr class="one_row">
                             <td>期数</td>
                             <td>初期余额</td>
@@ -248,7 +248,9 @@
                             <td>87493.84</td>
                         </tr>
                     </table>
+
                 </div>
+                <div class="bg" id="bg"></div>
             </div>
 
             <div class="car_details">
@@ -534,12 +536,25 @@
     <script src="js/buyproject.js" charset="utf-8"></script>
     <script src="js/headerAndnav.js" charset="utf-8"></script>
     <script type="text/javascript">
-        $(".invest_plan").click(function(){
+        $(".invest_plan").click(function(event){
             $(".popup").show();
+            event.stopPropagation()
         })
 
         $(".close_btn").click(function(){
             $(".popup").hide();
         })
+        $(document).click(function(){
+            $(".popup").hide();
+        })
+
+        var popupTableTrs = $("#popupTable tr");
+
+        for (var i = 0; i < popupTableTrs.length; i++) {
+            if (i%2 == 0) {
+                popupTableTrs.eq(i).addClass("odd");
+            }
+
+        }
     </script>
 </html>

@@ -5,24 +5,24 @@ $(function () {
     //hideAllBankLimit();
 
     //绑定银行
-	var url = "../user/getPayBank?payCode=1";// 1 丰付接口 2 宝付接口 等等
-	var data = CommnUtil.ajax(url, null,"json");
-	if (data.code == 1) {
-
-		var h = '';
-		for ( var i = 0; i < data.data.length; i++) {
-			var checked = '';
-			if(i==0){
-				checked = 'checked';
-			}
-			h+= '<label onclick="showLimitMoney('+ data.data[i].bankID +');" for="rdo'+ data.data[i].bankID +'"><input type="radio" name="bankgroup" id="rdo'+ data.data[i].bankID +'" value="'+ data.data[i].bankID +'" '+ checked +'><img src="'+ data.data[i].bankImgUrl +'"></label>';
-		}
-		$("#mybanks").html(h);
-
-	}else {
-		alert("获取银行失败");
-         return;
-	}
+	// var url = "../user/getPayBank?payCode=1";// 1 丰付接口 2 宝付接口 等等
+	// var data = CommnUtil.ajax(url, null,"json");
+	// if (data.code == 1) {
+    //
+	// 	var h = '';
+	// 	for ( var i = 0; i < data.data.length; i++) {
+	// 		var checked = '';
+	// 		if(i==0){
+	// 			checked = 'checked';
+	// 		}
+	// 		h+= '<label onclick="showLimitMoney('+ data.data[i].bankID +');" for="rdo'+ data.data[i].bankID +'"><input type="radio" name="bankgroup" id="rdo'+ data.data[i].bankID +'" value="'+ data.data[i].bankID +'" '+ checked +'><img src="'+ data.data[i].bankImgUrl +'"></label>';
+	// 	}
+	// 	$("#mybanks").html(h);
+    //
+	// }else {
+	// 	alert("获取银行失败");
+    //      return;
+	// }
 
 
     //切换
@@ -51,6 +51,7 @@ $(function () {
     }).css("ime-mode", "disabled"); //CSS设置输入法不可用
 
     $("#moneyAmount").focus(function() { //输入框阴影
+        $(".form-right").hide();
         $(this).parent().addClass("on");
     })
 
@@ -65,33 +66,37 @@ $(function () {
             // $(this).next().removeClass("err").addClass("err").html("请输入要充值金额");
             return;
         }
-        else if(IsDouble(Amount) == false)
-        {
-            $(".form-right").show();
-            $(".form-right").html("输入额度不正确（不允许0开头）");
-            // $(this).removeClass("border-red").addClass("border-red");
-            // $(this).next().removeClass("err").addClass("err").html("输入额度不正确（不允许0开头）");
-            return;
-        }
+        // else if(IsDouble(Amount) == false)
+        // {
+        //     $(".form-right").show();
+        //     $(".form-right").html("输入额度不正确（不允许0开头）");
+        //     // $(this).removeClass("border-red").addClass("border-red");
+        //     // $(this).next().removeClass("err").addClass("err").html("输入额度不正确（不允许0开头）");
+        //     return;
+        // }
         else if (parseInt(Amount) < 100) {
             $(".form-right").show();
             $(".form-right").html("单笔充值不低于100元（只保留2位小数）");
             // $(this).removeClass("border-red").addClass("border-red");
             // $(this).next().removeClass("err").addClass("err").html("单笔充值不低于100元（只保留2位小数）");
+            IsOKAmount = 0;
             return;
         }
         else {
             $(this).removeClass("border-red");
             $(this).next().removeClass("err").html("");
+            IsOKAmount = 1;
         }
-        IsOKAmount = 1;
+
     });
     //充值
     $("#btnRecharge").click(function () {
-        $("#moneyAmount").blur();
+        // $("#moneyAmount").blur();
         if (IsOKAmount == 0) {
+            alert(IsOKAmount)
             return;
         }
+
         var Amount = $.trim($("#moneyAmount").val());
         var Type = $(".Rtit li.cur").attr("type");
         //var Type = 1;
@@ -102,6 +107,7 @@ $(function () {
 			 YesAlert("亲爱的用户 ：请先绑定身份证进行实名认证！", "../user/toUserBaseInfo");
 			 return;
 		 }
+
 
         var userstatus = $("#hiduserstatus").val();
         if(userstatus == 2 || userstatus == 3){

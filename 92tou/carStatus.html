@@ -83,7 +83,7 @@
                 </div>
 
                 <div class="fund_log">
-                    <table cellspacing="0" cellpadding="0">
+                    <table id="fundlogtable" cellspacing="0" cellpadding="0">
                         <tr class="one_row">
                             <td>期数</td>
                             <td>初期余额</td>
@@ -281,7 +281,7 @@
                 </div>
                 <div class="invest_table">
                     <div class="fund_log">
-                        <table cellspacing="0" cellpadding="0">
+                        <table id="investRecord" cellspacing="0" cellpadding="0">
                             <tr class="one_row">
                                 <td>编号</td>
                                 <td>投资人</td>
@@ -398,4 +398,18 @@
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/buyproject.js" charset="utf-8"></script>
     <script src="js/headerAndnav.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        var fundTrs = $("#fundlogtable tr");
+        var investRecordTrs =$("#investRecord tr");
+        for (var i = 0; i < fundTrs.length; i++) {
+            if (i%2 == 0) {
+                fundTrs.eq(i).addClass("odd");
+            }
+        }
+        for (var i = 0; i < investRecordTrs.length; i++) {
+            if (i%2 == 0) {
+                investRecordTrs.eq(i).addClass("odd");
+            }
+        }
+    </script>
 </html>
