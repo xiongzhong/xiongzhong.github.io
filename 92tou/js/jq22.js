@@ -1,4 +1,5 @@
 // JavaScript Document
+
 function b(){
 	t = parseInt(x.css('top'));
 	y.css('top','19px');

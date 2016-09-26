@@ -23,6 +23,8 @@
 }
 .slide li a {
 	display: inline-block;
+	*display:inline;
+	*zoom:1;
 	width: 100%;
 	height: 100%;
 }
@@ -34,6 +36,7 @@
 	bottom: 10px;
 	width: 100%;
 }
+
 .bar ul li {
 	display: inline-block;
 	*display:inline;
@@ -42,34 +45,41 @@
 	height: 14px;
 	margin: 0 12px;
 	background: url(../images/point_num.png) no-repeat;
-	background-size: 100% 100%;
-	background-position: center center;
 }
 
 .bar ul li.on {
 	background: url(../images/point_num_active.png) no-repeat;
-	background-size: 100% 100%;
 }
 
 
 /*登录注册*/
-.slide_box .netMonitor_wrap {
+.main .slide_box #netMonitor_wrap {
 	width: 302px;
+	height: 319px;
 	position: absolute;
 	top: 42px;
 	left: 50%;
 	z-index: 10;
 	margin-left: 280px;
-	display: none;
 }
-.netMonitor {
-	border-radius: 5px;
+.bg {
+	position: absolute;
+	top: 0px;
+	right: 0;
 	width: 302px;
 	height: 319px;
-	float: right;
-	background: rgba(0,0,0,0.5);/*firefox、chrome*/
+	border-radius: 5px;
 	background: #000\9;/*IE*/
+	background: rgba(0,0,0,0.5);/*firefox、chrome*/
 	filter: alpha(opacity=50);/*IE*/
+}
+.netMonitor {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 302px;
+	height: 319px;
+	z-index: 20;
 	text-align: center;
 	font-family: "微软雅黑";
 	color: #FFF;
@@ -78,9 +88,10 @@
 	position:relative;
 }
 .netMonitor h1 {
-	margin-top: 43px;
-	margin-bottom: 39px;
+	margin-top: 40px;
+	margin-bottom: 29px;
 	font-size: 30px;
+	font-weight: normal;
 }
 .netMonitor p {
 	font-size: 16px;
@@ -90,18 +101,19 @@
 }
 .register_btn {
 	background: url(../images/bg.png) no-repeat -74px -24px;
-	display: inline-block;
+	display: block;
 	width: 230px;
 	height: 42px;
 	line-height: 42px;
 	color: #FFF;
 	font-size: 18px;
+	margin: 0 auto;
 }
-.on {
-	background: url(../images/register_btn.png);
+.register_btn.on {
+	text-indent: 35px;
 }
 .logoAndregister {
-	margin-top: 20px;
+	margin-top: 25px;
 }
 .logoAndregister>a:first-child {
 	font-size: 12px;
@@ -112,15 +124,12 @@
 	color: #FFF;
 }
 
-
-
 .describe {
 	width: 1200px;
 	height: 149px;
 	overflow: hidden;
 	margin: 0 auto;
 }
-
 
 .describe .list {
     float: left;
@@ -162,10 +171,9 @@
 .box p {
 	float: left;
     width: 275px;
-    height: 18px;
-    margin-top: 15px;
 	font-size: 14px;
 	color: #5E5E5E;
+	line-height: 48px;
 }
 .new_icon {
 	float: left;
@@ -176,11 +184,8 @@
 	margin-right: 11px;
 }
 .t_news {
-    position: absolute;
-    top: 0;
-    left: 288px;
-    width: 908px;
-    vertical-align: top;
+    width: 700px;
+	float: left;
 }
 
 .container {
@@ -316,6 +321,7 @@
 }
 .progress {
     width: 100%;
+	height: 83px;
     margin-top: 20px;
 }
 .progress p {
@@ -432,6 +438,7 @@ a.invest_btn {
     margin-top: 29px;
     margin-bottom: 19px;
     overflow: hidden;
+	border-bottom: 1px solid #DBDBDB;
 }
 .company_trends .newbanner {
     width: 49.5%;
@@ -494,6 +501,7 @@ a.invest_btn {
     text-align: center;
     background-color: #FFFFFF;
     padding: 22px 0;
+	margin-bottom: 22px;
 }
 .cooperationlogo ul {
     width: 100%;

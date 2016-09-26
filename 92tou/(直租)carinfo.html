@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<title>车辆详情（车辆直租）</title>
+		<link rel="stylesheet" href="css/reset.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+        <link rel="stylesheet" type="text/css" href="css/footer.css">
+        <link rel="stylesheet" href="css/carinfo.css" media="screen" title="no title">
+    </head>
+    <body>
+        <div class="header">
+			<div class="header_content">
+				<div class="header_left">
+					<p class="phone"></p>
+					<p class="phone_number">欢迎致电：400-800-546</p>
+					<p class="serve_time">服务时间：9:00-21:00</p>
+				</div>
+                <ul class="header_right">
+                    <li><a class="weibo" href="http://weibo.com/jiuaitou" target="_bank"></a></li>
+                    <li><a class="weixin" href="javascript:void(0)"></a></li>
+                    <li><a class="service" href="http://wpa.qq.com/msgrd?v=3&uin=2582983669&site=qq&menu=yes" target="_bank">在线客服</a></li>
+                    <li><a class="login" href="http://92tou.com/user/toLogin" target="_bank">登录</a></li>
+                    <li><a class="register" href="http://92tou.com/user/toRegister" target="_bank">注册</a></li>
+                    <span class="fuwuhao"></span>
+                    <div class="hello">
+                        <span class="name">187****1245 欢迎您</span>
+                        <a href="javascript:void">【退出】</a>
+                    </div>
+                </ul>
+			</div>
+        </div>
+
+        <div class="nav">
+            <div class="nav_content">
+                <div class="nav_content_left">
+                    <img src="images/logo.png" alt="就爱投" />
+                </div>
+                <ul class="nav_content_right">
+                    <li class="active"><a href="index.html">首页</a></li>
+                    <li><a href="http://92tou.com/index/toProjectList">我要投资</a></li>
+                    <li><a href="index.html">新手专区</a></li>
+                    <li><a href="index.html">关于我们</a></li>
+                    <li><a href="http://92tou.com/user/toLogin">个人中心</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <p class="location">您当前所在的位置：首页>我要投资>&nbsp;<em class="now_location">投资详情</em></p>
+            <div class="invest_way">
+                <div class="invest_way_lf">
+                    <h3 class="car_title">爱丽舍2016款1.6L手动时尚版</h3>
+                    <div class="sum">
+                        <div class="sum_box">
+                            <p><span id="total_sum">71500</span><span>元</span></p>
+                            <span class="sum_text">众筹金额</span>
+                        </div>
+                        <div class="sum_box">
+                            <p><span id="rent">3000</span><span>元</span></p>
+                            <span class="sum_text">每月租金</span>
+                        </div>
+                        <div class="sum_box">
+                            <p style="color:#FF4F3F;"><span  id="year_revenue">20</span><span>%</span></p>
+                            <span class="sum_text">预期年化收益</span>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress_txt">
+                            <span  style="float:left">众筹进度</span>
+                        </div>
+                        <div class="progress_box">
+                            <p id="progress_box">
+                                <span id="yellow"></span>
+                            </p>
+                        </div>
+                        <div class="invest_progress">
+                            <span id="invest_progress">48%</span>
+                            <p>
+                                <span>剩余可投份数：</span>
+                                <span id="remain_sum">100份</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="invest_info">
+                        <div class="invest_fl">
+                            <p>回款方式 ：每月分红</p>
+                            <p>锁定期：6个月</p>
+                        </div>
+                        <div class="invest_rg">
+                            <p>投资期限：3年</p>
+                            <p>权益转让：6个月之后可转让</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="invest_way_rg">
+                    <div class="usable_sum">
+                        <p>
+                            可用金额：<em id="usable_sum">100</em>元
+                            <a class="tou_up" href="javascript:void(0)">【充值】</a>
+                        </p>
+                        <p class="usable_num">
+                            余额可投：<em id="usable_num">1</em><em class="unit">份</em><span>（100元=1份）</span>
+                        </p>
+                    </div>
+
+                    <div class="shop_num">
+                        <p class="shop_num_txt">购买份数：</p>
+                        <div class="input_box">
+                            <span class="cut cut_active" id="cut"></span>
+                            <input id="shop_num" type="text" name="name" value="1份">
+                            <span class="add add_active" id="add"></span>
+                        </div>
+                    </div>
+                    <div class="invest_btn">
+                        <a href="javascript:void(0)" id="invest_btn">立即投资</a>
+                    </div>
+                    <div class="serve_pact">
+                        <span id="radio_btn" class="radio_btn on"></span>
+                        <p>
+                            我同意<a id="pact_txt" href="javascript:void(0)">《就爱投服务协议》</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 车辆购买详情 -->
+            <div class="car_details">
+                <div class="shop_details">
+                    <span class="car_details_title">车辆购买详情</span>
+                </div>
+
+                <div class="details_content">
+                    <div class="details_list1">
+                        <div class="details_table details_row">
+                            <span>购置车型：</span>
+                            <em>爱丽舍2016款1.6L手动时尚版</em>
+                        </div>
+                        <div class="details_table details_row">
+                            <span>裸车售价：</span>
+                            <em> 60800.0元</em>
+                        </div>
+                        <div class="details_table details_row">
+                            <span>ETC年费： </span>
+                            <em>2100.0元</em>
+                        </div>
+                    </div>
+                    <div class="details_list2">
+                        <div class="details_table details_row">
+                            <span>验车上牌费：</span>
+                            <em> 500.0元</em>
+                        </div>
+                        <div class="details_table details_row">
+                            <span>交强险：</span>
+                            <em> 950.0元</em>
+                        </div>
+                        <div class="details_table details_row">
+                            <span>车辆总价：</span>
+                            <em> 71500元</em>
+                        </div>
+                    </div>
+                    <div class="details_list3">
+                        <div class="details_table details_row">
+                            <span>新车购置税：</span>
+                            <em>150.0元</em>
+                        </div>
+                        <div class="details_table details_row">
+                            <span>商业险： </span>
+                            <em> 3100.0元</em>
+                        </div>
+
+                    </div>
+                    <div class="details_list4">
+                        <div class="details_table details_row">
+                            <span>车船使用税：</span>
+                            <em>150.0元</em>
+                        </div>
+                        <div class="details_table details_row">
+                            <span>GPS防盗追踪仪：</span>
+                            <em>550.0元</em>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- 投资流程 -->
+                <div class="shop_details">
+                    <span class="car_details_title">投资流程</span>
+                </div>
+                <div class="invest_flow">
+                    <img src="images/yzdgflow1.png" alt="" />
+                </div>
+
+                <!-- 车辆照片 -->
+                <div class="shop_details">
+                    <span class="car_details_title">车辆照片</span>
+                </div>
+                <div class="car_photos">
+                    <div class="car_img">
+                        <img src="images/car.png" alt="" />
+                    </div>
+                    <div class="car_img">
+                        <img src="images/car.png" alt="" />
+                    </div>
+                    <div class="car_img">
+                        <img src="images/car.png" alt="" />
+                    </div>
+                    <div class="car_img">
+                        <img src="images/car.png" alt="" />
+                    </div>
+                </div>
+
+                <!-- 车辆证书 -->
+                <div class="shop_details">
+                    <span class="car_details_title car_proof" >车辆购置凭证（车辆落地后可查看）</span>
+                    <i></i>
+                </div>
+                <div class="certificate">
+                    <div class="certificate_img">
+                        <img src="images/khxkz.jpg" alt="" />
+                        <p>购车发票</p>
+                    </div>
+                    <div class="certificate_img">
+                        <img src="images/khxkz.jpg" alt="" />
+                        <p>交强险单</p>
+                    </div>
+                    <div class="certificate_img">
+                        <img src="images/khxkz.jpg" alt="" />
+                        <p>保险单</p>
+                    </div>
+                    <div class="certificate_img">
+                        <img src="images/khxkz.jpg" alt="" />
+                        <p>行驶证</p>
+                    </div>
+                    <div class="certificate_img">
+                        <img src="images/khxkz.jpg" alt="" />
+                        <p>产权证</p>
+                    </div>
+                </div>
+                <div class="shop_details">
+                    <span class="car_details_title">投资记录</span>
+                </div>
+                <!-- 投资记录 -->
+                <div class="invest_record">
+                    <ul id="investRecord">
+                        <li class="table_head">
+                            <span>投资人</span>
+                            <span>投资金额</span>
+                            <span>投标时间</span>
+                        </li>
+                        <li class="table_row">
+                            <span class="phone_num">137****4586</span>
+                            <span class="money">5000</span>
+                            <span class="time">2016-08-18 15:13:27</span>
+                        </li>
+                        <li class="table_row">
+                            <span class="phone_num">137****4586</span>
+                            <span class="money">5000</span>
+                            <span class="time">2016-08-18 15:13:27</span>
+                        </li>
+                        <li class="table_row">
+                            <span class="phone_num">137****4586</span>
+                            <span class="money">5000</span>
+                            <span class="time">2016-08-18 15:13:27</span>
+                        </li>
+                        <li class="table_row">
+                            <span class="phone_num">137****4586</span>
+                            <span class="money">5000</span>
+                            <span class="time">2016-08-18 15:13:27</span>
+                        </li>
+                        <li class="table_row">
+                            <span class="phone_num">137****4586</span>
+                            <span class="money">5000</span>
+                            <span class="time">2016-08-18 15:13:27</span>
+                        </li>
+                        <li class="table_row">
+                            <span class="phone_num">137****4586</span>
+                            <span class="money">5000</span>
+                            <span class="time">2016-08-18 15:13:27</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="shop_details">
+                    <span class="car_details_title">常见问题</span>
+                </div>
+                <div class="common_problem">
+                    <ul>
+                        <li>
+                            <p class="problem_title">
+                                1：什么是汽车众筹？
+                            </p>
+                            <p class="problem_text">
+                                内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定；
+                            </p>
+                        </li>
+                        <li>
+                            <p class="problem_title">
+                                2：什么时候开始有分红？
+                            </p>
+                            <p class="problem_text">
+                                2.1：内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定；
+                            </p>
+                            <p class="problem_text">
+                                2.2：内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定；
+                            </p>
+                        </li>
+                        <li>
+                            <p class="problem_title">
+                                3：投资人需要承担哪些费用？
+                            </p>
+                            <p class="problem_text">
+                                内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定；
+                                内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定；
+                                内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定；
+                                内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定；
+                                内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定；
+                                内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定；
+                            </p>
+                        </li>
+                        <li>
+                            <p class="problem_title">
+                                4：平台的透明体现在哪些地方？
+                            </p>
+                            <p class="problem_text">
+                                内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定；
+                            </p>
+                        </li>
+                        <li>
+                            <p class="problem_title">
+                                5：什么是权益转让？
+                            </p>
+                            <p class="problem_text">
+                                内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定内容未定；
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 页脚 -->
+        <div class="footer">
+            <div class="footer_content">
+                <div class="footer_content_left">
+                    <ul class="logos">
+                        <li>
+                            <a href="http://webscan.360.cn/index/checkwebsite/url/www.92tou.com" target="_bank">
+                                <img src="images/360safe.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="links">
+                        <a href="http://92tou.com/index/toAboutUs">公司介绍</a> |
+                        <a href="http://92tou.com/index/toAboutUsContactUs">联系我们</a> |
+                        <a href="http://92tou.com/index/toAboutUsRegister">服务条款</a> |
+                        <a href="http://92tou.com/index/toAboutUsQuestion">帮助中心</a>
+                        <!-- <a href="javascript:void(0)">意见反馈</a> -->
+                    </div>
+                    <p class="copyright">深圳市万利互联网金融有限公司 Copyright Reserved 2016-2017|粤ICP备16017677号-1</p>
+                </div>
+                <div class="footer_content_right">
+                    <div class="servicemethod">
+                        <p>联系我们：（9:00-21:00）</p>
+                        <p>客服电话：400 800 546</p>
+                        <p style="font-size:12px;">商务洽谈合作：kefu@92tou.com</p>
+                    </div>
+                    <div class="gongzhonghao">
+                        <div class="xinlang">
+                            <img src="images/sinaweibocode.jpg">
+                            <p>关注我们的微博</p>
+                        </div>
+                        <div class="gzh">
+                            <img src="images/fuwuhao.jpg">
+                            <p>关注我们的微信</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/buyproject.js" charset="utf-8"></script>
+    <script src="js/headerAndnav.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        var investRecordTrs = $("#investRecord li");
+        for (var i = 0; i < investRecordTrs.length; i++) {
+            if (i%2 == 0) {
+                investRecordTrs.eq(i).addClass("odd");
+            }
+        }
+    </script>
+</html>

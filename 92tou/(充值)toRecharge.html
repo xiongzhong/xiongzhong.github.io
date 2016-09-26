@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<title>就爱投-账户充值</title>
+		<link rel="stylesheet" href="css/reset.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+        <link rel="stylesheet" type="text/css" href="css/footer.css">
+        <link rel="stylesheet" href="css/base.css" media="screen" title="no title">
+        <link rel="stylesheet" href="css/manage.css" media="screen" title="no title">
+        <link rel="stylesheet" href="css/myCenterMenu.css" media="screen" title="no title">
+    </head>
+    <body>
+        <div class="header">
+			<div class="header_content">
+				<div class="header_left">
+					<p class="phone"></p>
+					<p class="phone_number">欢迎致电：400-800-546</p>
+					<p class="serve_time">服务时间：9:00-21:00</p>
+				</div>
+                <ul class="header_right">
+                    <li><a class="weibo" href="http://weibo.com/jiuaitou" target="_bank"></a></li>
+                    <li><a class="weixin" href="javascript:void(0)"></a></li>
+                    <li><a class="service" href="http://wpa.qq.com/msgrd?v=3&uin=2582983669&site=qq&menu=yes" target="_bank">在线客服</a></li>
+                    <li><a class="login" href="http://92tou.com/user/toLogin" target="_bank">登录</a></li>
+                    <li><a class="register" href="http://92tou.com/user/toRegister" target="_bank">注册</a></li>
+                    <span class="fuwuhao"></span>
+                    <div class="hello">
+                        <span class="name">187****1245 欢迎您</span>
+                        <a href="javascript:void">【退出】</a>
+                    </div>
+                </ul>
+			</div>
+        </div>
+
+        <div class="nav">
+            <div class="nav_content">
+                <div class="nav_content_left">
+                    <img src="images/logo.png" alt="就爱投" />
+                </div>
+                <ul class="nav_content_right">
+                    <li class="active"><a href="index.html">首页</a></li>
+                    <li><a href="http://92tou.com/index/toProjectList">我要投资</a></li>
+                    <li><a href="index.html">新手专区</a></li>
+                    <li><a href="http://92tou.com/index/toAboutUs">关于我们</a></li>
+                    <li><a href="http://92tou.com/user/toLogin">个人中心</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 主体内容 -->
+        <div class="container">
+            <div class="menu">
+                <div class="list_title my_account menu_active">
+                    <a href="myHome.html">
+                        <span class="my_account_icon"></span>
+                        <span>我的账户</span>
+                    </a>
+                    <i style="display:block;"></i>
+                </div>
+                <div class="list_title my_invest">
+                    <a href="javascript:void(0)">
+                        <span class="my_invest_icon"></span>我的投资
+                    </a>
+                    <i></i>
+                </div>
+                <div class="list_row item list_row_active">
+                    <a href="devideRecord.html">分红记录</a>
+                </div>
+                <div class="list_row item">
+                    <a href="investRecord.html">投资记录</a>
+                </div>
+                <div class="list_row item">
+                    <a href="javascript:void(0)">权益转让</a>
+                </div>
+                <div class="list_row item">
+                    <a href="javascript:void(0)">车辆出售</a>
+                </div>
+                <div class="list_title my_money">
+                    <a href="javascript:void(0)">
+                        <span class="my_money_icon"></span>我的财富
+                    </a>
+                    <i></i>
+                </div>
+                <div class="list_row item">
+                    <a href="moneyDetail.html">资金明细</a>
+                </div>
+                <div class="list_row item">
+                    <a href="toRecharge.html">账户充值</a>
+                </div>
+                <div class="list_row item">
+                    <a href="Withdraw.html">账户提现</a>
+                </div>
+                <div class="list_row item">
+                    <a href="invite.html">邀请有礼</a>
+                </div>
+                <div class="list_title msg_center">
+                    <a href="javascript:void(0)">
+                        <span class="msg_center_icon"></span>消息中心
+                    </a>
+                    <i></i>
+                </div>
+                <div class="list_title my_msg">
+                    <a href="javascript:void(0)">
+                        <span class="my_msg_icon"></span>个人信息
+                    </a>
+                    <i></i>
+                </div>
+            </div>
+            <div class="fr user_contain_r">
+                <div class="RightBox">
+                    <div class="memberBox pd20 clearfix">
+                        <div class="titleBox">
+                            <ul>
+                                <li class="cur"><a href="toRecharge.html">马上充值</a></li>
+                                <li><a href="rechargeRecord.html">充值记录</a></li>
+                            </ul>
+                        </div>
+                        <div class="border1px">
+                            <div class="mb35 clearfix">
+                                <div class="formBox">
+                                    <div class="inputBox">
+                                        <div class="form-left">充值金额</div>
+                                        <input type="text" name="moneyAmount" id="moneyAmount" class="input lf" data-focus="请输入充值金额" data-err="充值金额超出" placeholder="请输入要充值金额">
+                                    </div>
+
+                                    <div class="form-right">*请输入要充值金额</div>
+                                </div>
+                                <div class="rechargeBox clearfix">
+                                    <div class="Lbox" style="color:#333;">充值方式：</div>
+                                    <div class="Rbox">
+                                        <div class="hbd Rtit">
+                                           <ul>
+                                                <li class="cur" type="2">丰付快捷支付(推荐)</li>
+                                                <li type="1">丰付网关支付(大额)</li>
+                                           </ul>
+                                        </div>
+                                        <div class="bd RinfoBox">
+                                            <div id="mybankskj" class="item bankList" style="display: block; text-align:left;">
+                                                <table id="kjzf">
+                                                    <tr class="table_head">
+                                                        <td>银行名称</td>
+                                                        <td>卡种</td>
+                                                        <td>单笔最大</td>
+                                                        <td>单日最大</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>浦发银行</td>
+                                                        <td>借记卡</td>
+                                                        <td>5千</td>
+                                                        <td>5千</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>工商银行&nbsp;&nbsp;&nbsp;&nbsp;农业银行</td>
+                                                        <td>借记卡</td>
+                                                        <td>2万</td>
+                                                        <td>5万</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>中国银行&nbsp;&nbsp;&nbsp;&nbsp;建设银行</td>
+                                                        <td>借记卡</td>
+                                                        <td>2万</td>
+                                                        <td>5万</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>交通银行&nbsp;&nbsp;&nbsp;&nbsp;招商银行</td>
+                                                        <td>借记卡</td>
+                                                        <td>2万</td>
+                                                        <td>5万</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>光大银行&nbsp;&nbsp;&nbsp;&nbsp;民生银行</td>
+                                                        <td>借记卡</td>
+                                                        <td>2万</td>
+                                                        <td>5万</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>中信银行&nbsp;&nbsp;&nbsp;&nbsp;广发银行</td>
+                                                        <td>借记卡</td>
+                                                        <td>2万</td>
+                                                        <td>5万</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>平安银行&nbsp;&nbsp;&nbsp;&nbsp;兴业银行</td>
+                                                        <td>借记卡</td>
+                                                        <td>2万</td>
+                                                        <td>5万</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>华夏银行</td>
+                                                        <td>借记卡</td>
+                                                        <td>2万</td>
+                                                        <td>5万</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div id="mybanks" class="item bankList" style="text-align:left;">
+                                                <div class="banksBox">
+                                                    <label for="rdo">
+                                                        <input type="radio" name="bankgroup" id="rdo">
+                                                        <img src="images/bankimages/01.jpg">
+                                                    </label>
+                                                    <label for="rdo1">
+                                                        <input type="radio" name="bankgroup" id="rdo1">
+                                                        <img src="images/bankimages/02.jpg">
+                                                    </label>
+                                                    <label for="rdo2">
+                                                        <input type="radio" name="bankgroup" id="rdo2">
+                                                        <img src="images/bankimages/03.jpg">
+                                                    </label>
+                                                    <label for="rdo3">
+                                                        <input type="radio" name="bankgroup" id="rdo3">
+                                                        <img src="images/bankimages/04.jpg">
+                                                    </label>
+                                                    <label for="rdo4">
+                                                        <input type="radio" name="bankgroup" id="rdo4">
+                                                        <img src="images/bankimages/05.jpg">
+                                                    </label>
+                                                    <label for="rdo5">
+                                                        <input type="radio" name="bankgroup" id="rdo5">
+                                                        <img src="images/bankimages/06.jpg">
+                                                    </label>
+                                                    <label for="rdo6">
+                                                        <input type="radio" name="bankgroup" id="rdo6">
+                                                        <img src="images/bankimages/07.jpg">
+                                                    </label>
+                                                    <label for="rdo7">
+                                                        <input type="radio" name="bankgroup" id="rdo7">
+                                                        <img src="images/bankimages/08.jpg">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="formBox" style="text-align:left; margin: 0;">
+                                    <input type="hidden" id="hiduserstatus" name="hiduserstatus" value="${UserStatus}"></input>
+                                    <input type="hidden" id="hididentitycard" name="hididentitycard" value="${IdentityCard}"></input>
+                                    <a href="javascript:void(0);" class="btn-blue" id="btnRecharge"></a>
+                                </div>
+
+                                <div id="allbanklimit" style="font-size:12px;display:block;">
+                                    <table id="icbc" border="1" cellspacing="1" style="background-color:#a0c6e5;">
+                                       <tbody style="text-align:center;line-height:30px;">
+                                           <tr>
+                                               <td rowspan="2">支持的银行</td>
+                                               <td colspan="3">借记卡</td>
+                                               <td colspan="3">信用卡</td>
+                                           </tr>
+                                           <tr>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                           </tr>
+                                           <tr>
+                                                <td rowspan="5">工商银行</td>
+                                                <td>电子口令卡</td>
+                                                <td>500</td>
+                                                <td>1000</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                           </tr>
+                                           <tr>
+                                                <td>短信认证</td>
+                                                <td>2000</td>
+                                                <td>5000</td>
+                                                <td>短信认证</td>
+                                                <td>1000</td>
+                                                <td>5000</td>
+                                           </tr>
+                                           <tr>
+                                                <td>工行e支付</td>
+                                                <td>5000</td>
+                                                <td>5000</td>
+                                                <td>工行e支付</td>
+                                                <td>2000</td>
+                                                <td>2000</td>
+                                           </tr>
+                                           <tr>
+                                                <td>电子密码</td>
+                                                <td>50万</td>
+                                                <td>100万</td>
+                                                <td>电子密码</td>
+                                                <td>500</td>
+                                                <td>1000</td>
+                                           </tr>
+                                           <tr>
+                                                <td>USBKey（U盾）客户</td>
+                                                <td>100万</td>
+                                                <td>100万</td>
+                                                <td>USBKey（U盾）客户</td>
+                                                <td>信用卡限额</td>
+                                                <td>信用卡限额</td>
+                                           </tr>
+                                       </tbody>
+                                    </table>
+
+                                    <table id="huaxia">
+                                       <tbody style="text-align:center;line-height:30px;">
+                                           <tr>
+                                                <td rowspan="2">支持的银行</td>
+                                                <td colspan="3">借记卡</td>
+                                                <td colspan="3">信用卡</td>
+                                           </tr>
+                                           <tr>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                           </tr>
+                                           <tr>
+                                                <td rowspan="3">华夏银行</td>
+                                                <td>支付密码</td>
+                                                <td>300元</td>
+                                                <td>1000元</td>
+                                                <td>支付密码</td>
+                                                <td>300元</td>
+                                                <td>1000元</td>
+                                           </tr>
+                                           <tr>
+                                                <td>手机动态</td>
+                                                <td>1000元</td>
+                                                <td>5000元</td>
+                                                <td>手机动态</td>
+                                                <td>1000元</td>
+                                                <td>5000元</td>
+                                           </tr>
+                                           <tr>
+                                                <td>数字证书</td>
+                                                <td>5万</td>
+                                                <td>10万</td>
+                                                <td>数字证书</td>
+                                                <td>5万</td>
+                                                <td>10万</td>
+                                           </tr>
+                                       </tbody>
+                                    </table>
+
+                                    <table id="shanghai">
+                                       <tbody style="text-align:center;line-height:30px;">
+                                           <tr>
+                                               <td rowspan="2">支持的银行</td>
+                                               <td colspan="3">借记卡</td>
+                                               <td colspan="3">信用卡</td>
+                                           </tr>
+                                           <tr>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                           </tr>
+                                           <tr>
+                                                <td rowspan="5">上海银行</td>
+                                                <td>上银快付</td>
+                                                <td>2000</td>
+                                                <td>5000（月限额）</td>
+                                                <td>上银快付</td>
+                                                <td>2000</td>
+                                                <td>5000（月限额）</td>
+                                           </tr>
+                                           <tr>
+                                                <td>动态密码版</td>
+                                                <td>5000</td>
+                                                <td>5000</td>
+                                               <td>动态密码版</td>
+                                                <td>6000</td>
+                                                <td>1万</td>
+                                           </tr>
+                                           <tr>
+                                                <td>E盾证书版</td>
+                                                <td>5万</td>
+                                                <td>5万</td>
+                                                <td>E盾证书版</td>
+                                                <td>5万</td>
+                                                <td>无限额</td>
+                                           </tr>
+                                       </tbody>
+                                    </table>
+
+                                    <table id="bohai">
+                                       <tbody style="text-align:center;line-height:30px;">
+                                           <tr>
+                                               <td rowspan="2">
+                                                   支持的银行
+                                               </td>
+                                               <td colspan="3">
+                                                   借记卡
+                                               </td>
+                                               <td colspan="3">
+                                                   信用卡
+                                               </td>
+
+                                           </tr>
+                                           <tr>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                           </tr>
+                                           <tr>
+                                                <td>渤海银行</td>
+                                                <td>证书用户</td>
+                                                <td>2万</td>
+                                                <td>10万</td>
+                                                <td>不支持</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                           </tr>
+
+                                       </tbody>
+                                    </table>
+
+                                    <table id="hangzhou">
+                                       <tbody style="text-align:center;line-height:30px;">
+                                           <tr>
+                                               <td rowspan="2">
+                                                   支持的银行
+                                               </td>
+                                               <td colspan="3">
+                                                   借记卡
+                                               </td>
+                                               <td colspan="3">
+                                                   信用卡
+                                               </td>
+
+                                           </tr>
+                                           <tr>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                           </tr>
+                                           <tr>
+                                                <td rowspan="2">杭州银行</td>
+                                                <td>大众版</td>
+                                                <td>300元</td>
+                                                <td>300元</td>
+                                                <td>大众版</td>
+                                                <td>500元</td>
+                                                <td>500元</td>
+                                           </tr>
+                                           <tr>
+                                                <td>专业版</td>
+                                                <td>无限额</td>
+                                                <td>无限额</td>
+                                                <td>专业版</td>
+                                                <td>500元</td>
+                                                <td>500元</td>
+                                           </tr>
+                                       </tbody>
+                                    </table>
+
+                                    <table id="huishang">
+                                       <tbody style="text-align:center;line-height:30px;">
+                                           <tr>
+                                               <td rowspan="2">
+                                                   支持的银行
+                                               </td>
+                                               <td colspan="3">
+                                                   借记卡
+                                               </td>
+                                               <td colspan="3">
+                                                   信用卡
+                                               </td>
+
+                                           </tr>
+                                           <tr>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                           </tr>
+                                           <tr>
+                                                <td rowspan="2">徽商银行</td>
+                                                <td>动态密码</td>
+                                                <td>1000元</td>
+                                                <td>5000元</td>
+                                                <td>动态密码</td>
+                                                <td>1000</td>
+                                                <td>5000</td>
+                                           </tr>
+                                           <tr>
+                                                <td>USBKEY用户</td>
+                                                <td>50万</td>
+                                                <td>200万</td>
+                                                <td>USBKEY</td>
+                                                <td>无限额</td>
+                                                <td>无限额</td>
+                                           </tr>
+                                       </tbody>
+                                    </table>
+
+                                    <table id="zheshang">
+                                       <tbody style="text-align:center;line-height:30px;">
+                                           <tr>
+                                               <td rowspan="2">
+                                                   支持的银行
+                                               </td>
+                                               <td colspan="3">
+                                                   借记卡
+                                               </td>
+                                               <td colspan="3">
+                                                   信用卡
+                                               </td>
+
+                                           </tr>
+                                           <tr>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                           </tr>
+                                           <tr>
+                                                <td rowspan="2">浙商银行</td>
+                                                <td>大众版用户</td>
+                                                <td>200</td>
+                                                <td>1000</td>
+                                                <td rowspan="2">不支持</td>
+                                                <td rowspan="2">-</td>
+                                                <td rowspan="2">-</td>
+                                           </tr>
+                                           <tr>
+                                                <td>签约用户</td>
+                                                <td>无限额</td>
+                                                <td>无限额</td>
+                                           </tr>
+                                       </tbody>
+                                    </table>
+
+                                    <table id="beijingnongshang">
+                                       <tbody style="text-align:center;line-height:30px;">
+                                           <tr>
+                                               <td rowspan="2">
+                                                   支持的银行
+                                               </td>
+                                               <td colspan="3">
+                                                   借记卡
+                                               </td>
+                                               <td colspan="3">
+                                                   信用卡
+                                               </td>
+
+                                           </tr>
+                                           <tr>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                           </tr>
+                                           <tr>
+                                                <td rowspan="2">北京农商银行</td>
+                                                <td>手机认证客户</td>
+                                                <td>10万</td>
+                                                <td>50万</td>
+                                                <td rowspan="2">不支持</td>
+                                                <td rowspan="2">-</td>
+                                                <td rowspan="2">-</td>
+                                           </tr>
+                                           <tr>
+                                                <td>KEY认证客户</td>
+                                                <td>无限额</td>
+                                                <td>无限额</td>
+                                           </tr>
+                                       </tbody>
+                                    </table>
+
+                                    <table id="nongye">
+                                       <tbody style="text-align:center;line-height:30px;">
+                                           <tr>
+                                               <td rowspan="2">
+                                                   支持的银行
+                                               </td>
+                                               <td colspan="3">
+                                                   借记卡
+                                               </td>
+                                               <td colspan="3">
+                                                   信用卡
+                                               </td>
+
+                                           </tr>
+                                           <tr>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                           </tr>
+                                           <tr>
+                                                <td rowspan="5">农业银行</td>
+                                                <td>K码</td>
+                                                <td>1000</td>
+                                                <td>3000</td>
+                                                <td rowspan="3">不支持</td>
+                                                <td rowspan="3">-</td>
+                                                <td rowspan="3">-</td>
+                                           </tr>
+                                           <tr>
+                                                <td>K令</td>
+                                                <td>10万</td>
+                                                <td>50万</td>
+                                           </tr>
+                                           <tr>
+                                                <td>K宝</td>
+                                                <td>无限额</td>
+                                                <td>无限额</td>
+                                           </tr>
+                                       </tbody>
+                                    </table>
+
+                                    <table id="zhongguo">
+                                       <tbody style="text-align:center;line-height:30px;">
+                                           <tr>
+                                               <td rowspan="2">
+                                                   支持的银行
+                                               </td>
+                                               <td colspan="3">
+                                                   借记卡
+                                               </td>
+                                               <td colspan="3">
+                                                   信用卡
+                                               </td>
+
+                                           </tr>
+                                           <tr>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                           </tr>
+                                           <tr>
+                                                <td rowspan="2">中国银行</td>
+                                                <td>中银快付</td>
+                                                <td>1000</td>
+                                                <td>3000</td>
+                                                <td>中银快付</td>
+                                                <td>1000</td>
+                                                <td>5000</td>
+                                           </tr>
+                                           <tr>
+                                                <td>网银支付（密码+UKEY）</td>
+                                                <td>5万</td>
+                                                <td>50万</td>
+                                                <td>网银支付（密码+UKEY）</td>
+                                                <td>5000</td>
+                                                <td>5万</td>
+                                           </tr>
+                                       </tbody>
+                                    </table>
+
+                                    <table id="jianshe">
+                                        <tbody style="text-align:center;line-height:30px;">
+                                           <tr>
+                                               <td rowspan="2">
+                                                   支持的银行
+                                               </td>
+                                               <td colspan="3">
+                                                   借记卡
+                                               </td>
+                                               <td colspan="3">
+                                                   信用卡
+                                               </td>
+
+                                           </tr>
+                                           <tr>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                           </tr>
+                                           <tr>
+                                                <td rowspan="3">建设银行</td>
+                                                <td>账号支付</td>
+                                                <td>500</td>
+                                                <td>500</td>
+                                                <td rowspan="3">不支持</td>
+                                                <td rowspan="3">-</td>
+                                                <td rowspan="3">-</td>
+                                           </tr>
+                                           <tr>
+                                                <td>短信动态口令</td>
+                                                <td>5000</td>
+                                                <td>5000</td>
+                                           </tr>
+                                            <tr>
+                                                <td>USBkey+动态短信验证</td>
+                                                <td>50万</td>
+                                                <td>50万</td>
+                                           </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <table id="zhaoshang">
+                                        <tbody style="text-align:center;line-height:30px;">
+                                           <tr>
+                                               <td rowspan="2">
+                                                   支持的银行
+                                               </td>
+                                               <td colspan="3">
+                                                   借记卡
+                                               </td>
+                                               <td colspan="3">
+                                                   信用卡
+                                               </td>
+
+                                           </tr>
+                                           <tr>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                           </tr>
+                                           <tr>
+                                                <td rowspan="2">招商银行</td>
+                                                <td>大众版</td>
+                                                <td>500</td>
+                                                <td>500</td>
+                                                <td>大众版</td>
+                                                <td>500</td>
+                                                <td>客户自行设定</td>
+                                           </tr>
+                                           <tr>
+                                                <td>专业版</td>
+                                                <td>无限额</td>
+                                                <td>无限额</td>
+                                                <td>专业版</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                           </tr>
+
+                                        </tbody>
+                                    </table>
+
+                                    <table id="jiaotong">
+                                        <tbody style="text-align:center;line-height:30px;">
+                                           <tr>
+                                               <td rowspan="2">
+                                                   支持的银行
+                                               </td>
+                                               <td colspan="3">
+                                                   借记卡
+                                               </td>
+                                               <td colspan="3">
+                                                   信用卡
+                                               </td>
+
+                                           </tr>
+                                           <tr>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                           </tr>
+                                           <tr>
+                                                <td rowspan="2">交通银行</td>
+                                                <td>短信验证</td>
+                                                <td>5万</td>
+                                                <td>5万</td>
+                                                <td rowspan="2">不支持</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                           </tr>
+                                           <tr>
+                                                <td>USBKey客户</td>
+                                                <td>100万</td>
+                                                <td>200万</td>
+
+                                                <td>-</td>
+                                                <td>-</td>
+                                           </tr>
+
+                                        </tbody>
+                                    </table>
+
+                                    <table id="youzheng">
+                                        <tbody style="text-align:center;line-height:30px;">
+                                           <tr>
+                                               <td rowspan="2">
+                                                   支持的银行
+                                               </td>
+                                               <td colspan="3">
+                                                   借记卡
+                                               </td>
+                                               <td colspan="3">
+                                                   信用卡
+                                               </td>
+
+                                           </tr>
+                                           <tr>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                           </tr>
+                                           <tr>
+                                                <td rowspan="3">中国邮政储蓄银行</td>
+                                                <td>个人网银短信验证码</td>
+                                                <td>5万</td>
+                                                <td>5万</td>
+                                                <td rowspan="3">不支持</td>
+                                                <td rowspan="3">-</td>
+                                                <td rowspan="3">-</td>
+                                           </tr>
+                                           <tr>
+                                                <td>电子令牌+短信验证码</td>
+                                                <td>20万</td>
+                                                <td>20万</td>
+                                           </tr>
+                                            <tr>
+                                                <td>USBKEY+短信验证码</td>
+                                                <td>200万</td>
+                                                <td>200万</td>
+                                           </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <table id="minsheng">
+                                        <tbody style="text-align:center;line-height:30px;">
+                                           <tr>
+                                               <td rowspan="2">
+                                                   支持的银行
+                                               </td>
+                                               <td colspan="3">
+                                                   借记卡
+                                               </td>
+                                               <td colspan="3">
+                                                   信用卡
+                                               </td>
+
+                                           </tr>
+                                           <tr>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                           </tr>
+                                           <tr>
+                                                <td rowspan="3">民生银行</td>
+                                                <td>大众版</td>
+                                                <td>300</td>
+                                                <td>300</td>
+                                                <td>大众版</td>
+                                                <td>300</td>
+                                                <td>300</td>
+                                           </tr>
+                                           <tr>
+                                                <td>浏览器证书</td>
+                                                <td>5000元</td>
+                                                <td>5000元</td>
+                                                <td>贵宾版</td>
+                                                <td>1000元</td>
+                                                <td>5000元</td>
+                                           </tr>
+                                           <tr>
+                                                <td>U宝</td>
+                                                <td>50万</td>
+                                                <td>50万</td>
+                                                <td>U宝用户</td>
+                                                <td>1万</td>
+                                                <td>2万</td>
+                                           </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <table id="guangfa">
+                                        <tbody style="text-align:center;line-height:30px;">
+                                           <tr>
+                                               <td rowspan="2">
+                                                   支持的银行
+                                               </td>
+                                               <td colspan="3">
+                                                   借记卡
+                                               </td>
+                                               <td colspan="3">
+                                                   信用卡
+                                               </td>
+
+                                           </tr>
+                                           <tr>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                           </tr>
+                                           <tr>
+                                                <td rowspan="2">广发银行</td>
+                                                <td>手机动态码</td>
+                                                <td>3000</td>
+                                                <td>3000</td>
+                                                <td>手机动态码</td>
+                                                <td>100万</td>
+                                                <td>100万</td>
+                                           </tr>
+                                           <tr>
+                                                <td>usbkey用户</td>
+                                                <td>100万</td>
+                                                <td>100万</td>
+                                                <td>usbkey用户</td>
+                                                <td>100万</td>
+                                                <td>100万</td>
+                                           </tr>
+
+                                        </tbody>
+                                    </table>
+
+                                    <table id="pufa">
+                                        <tbody style="text-align:center;line-height:30px;">
+                                           <tr>
+                                               <td rowspan="2">
+                                                   支持的银行
+                                               </td>
+                                               <td colspan="3">
+                                                   借记卡
+                                               </td>
+                                               <td colspan="3">
+                                                   信用卡
+                                               </td>
+
+                                           </tr>
+                                           <tr>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                           </tr>
+                                           <tr>
+                                                <td rowspan="2">浦发银行</td>
+                                                <td>动态密码</td>
+                                                <td>20万</td>
+                                                <td>20万</td>
+                                                <td rowspan="2">信用卡</td>
+                                                <td>500</td>
+                                                <td>1000</td>
+                                           </tr>
+                                           <tr>
+                                                <td>证书用户</td>
+                                                <td>30万</td>
+                                                <td>无限额</td>
+                                                <td>500</td>
+                                                <td>1000</td>
+                                           </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <table id="guangda">
+                                        <tbody style="text-align:center;line-height:30px;">
+                                           <tr>
+                                               <td rowspan="2">
+                                                   支持的银行
+                                               </td>
+                                               <td colspan="3">
+                                                   借记卡
+                                               </td>
+                                               <td colspan="3">
+                                                   信用卡
+                                               </td>
+
+                                           </tr>
+                                           <tr>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                           </tr>
+                                           <tr>
+                                                <td rowspan="2">光大银行</td>
+                                                <td>手机动态码</td>
+                                                <td>5000</td>
+                                                <td>5000</td>
+                                                <td rowspan="2">不支持</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                           </tr>
+                                           <tr>
+                                                <td>令牌动态码</td>
+                                                <td>50万</td>
+                                                <td>50万</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                           </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <table id="zhongxin">
+                                        <tbody style="text-align:center;line-height:30px;">
+                                           <tr>
+                                               <td rowspan="2">
+                                                   支持的银行
+                                               </td>
+                                               <td colspan="3">
+                                                   借记卡
+                                               </td>
+                                               <td colspan="3">
+                                                   信用卡
+                                               </td>
+
+                                           </tr>
+                                           <tr>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                           </tr>
+                                           <tr>
+                                                <td rowspan="2">中信银行</td>
+                                                <td>文件证书</td>
+                                                <td>1000</td>
+                                                <td>5000</td>
+                                                <td>文件证书</td>
+                                                <td>500</td>
+                                                <td>5000</td>
+                                           </tr>
+                                           <tr>
+                                                <td>数字证书</td>
+                                                <td>100万</td>
+                                                <td>100万</td>
+                                                <td>数字证书</td>
+                                                <td>500</td>
+                                                <td>5000</td>
+                                           </tr>
+
+                                        </tbody>
+                                    </table>
+
+                                    <table id="xingye">
+                                        <tbody style="text-align:center;line-height:30px;">
+                                           <tr>
+                                               <td rowspan="2">
+                                                   支持的银行
+                                               </td>
+                                               <td colspan="3">
+                                                   借记卡
+                                               </td>
+                                               <td colspan="3">
+                                                   信用卡
+                                               </td>
+
+                                           </tr>
+                                           <tr>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                           </tr>
+                                           <tr>
+                                                <td rowspan="2">兴业银行</td>
+                                                <td>动态口令/短信验证</td>
+                                                <td>5000</td>
+                                                <td>5000</td>
+                                                <td>小额信用卡</td>
+                                                <td>2000</td>
+                                                <td>2000</td>
+                                           </tr>
+                                           <tr>
+                                                <td>证书用户</td>
+                                                <td>100万</td>
+                                                <td>100万</td>
+                                                <td>大额信用卡</td>
+                                                <td>5000</td>
+                                                <td>10000</td>
+                                           </tr>
+
+                                        </tbody>
+                                    </table>
+
+                                    <table id="beijing">
+                                        <tbody style="text-align:center;line-height:30px;">
+                                           <tr>
+                                               <td rowspan="2">
+                                                   支持的银行
+                                               </td>
+                                               <td colspan="3">
+                                                   借记卡
+                                               </td>
+                                               <td colspan="3">
+                                                   信用卡
+                                               </td>
+
+                                           </tr>
+                                           <tr>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                           </tr>
+                                           <tr>
+                                                <td rowspan="2">北京银行</td>
+                                                <td>动态密码</td>
+                                                <td>1000</td>
+                                                <td>5000</td>
+                                                <td rowspan="2">不支持</td>
+                                                <td></td>
+                                                <td></td>
+                                           </tr>
+                                           <tr>
+                                                <td>签约用户</td>
+                                                <td>100万</td>
+                                                <td>100万</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                           </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <table id="pingan">
+                                        <tbody style="text-align:center;line-height:30px;">
+                                           <tr>
+                                               <td rowspan="2">
+                                                   支持的银行
+                                               </td>
+                                               <td colspan="3">
+                                                   借记卡
+                                               </td>
+                                               <td colspan="3">
+                                                   信用卡
+                                               </td>
+
+                                           </tr>
+                                           <tr>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                           </tr>
+                                           <tr>
+                                                <td rowspan="2">平安银行</td>
+                                                <td>手机动态码</td>
+                                                <td>5万</td>
+                                                <td>5万</td>
+                                                <td>小额信用卡</td>
+                                                <td>5000</td>
+                                                <td>5000</td>
+                                           </tr>
+                                       </tbody>
+                                    </table>
+
+                                    <table id="ningbo">
+                                        <tbody style="text-align:center;line-height:30px;">
+                                           <tr>
+                                                <td rowspan="2">支持的银行</td>
+                                                <td colspan="3">借记卡</td>
+                                                <td colspan="3">信用卡</td>
+                                           </tr>
+                                           <tr>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                           </tr>
+                                           <tr>
+                                                <td rowspan="3">宁波银行</td>
+                                                <td>短信验证</td>
+                                                <td>5万</td>
+                                                <td>5万</td>
+                                                <td>短信验证</td>
+                                                <td>999</td>
+                                                <td>3000</td>
+                                           </tr>
+                                           <tr>
+                                                <td>动态口令</td>
+                                                <td>5万</td>
+                                                <td>5万</td>
+                                                <td>动态口令</td>
+                                                <td>5000</td>
+                                                <td>5000</td>
+                                           </tr>
+                                           <tr>
+                                                <td>USBKEY用户</td>
+                                                <td>无限额</td>
+                                                <td>无限额</td>
+                                                <td>USBKEY用户</td>
+                                                <td>5000</td>
+                                                <td>5000</td>
+                                           </tr>
+                                        </tbody>
+                                    </table>
+                                    <table id="dongya">
+                                       <tbody style="text-align:center;line-height:30px;">
+                                           <tr>
+                                               <td rowspan="2">支持的银行 </td>
+                                               <td colspan="3">借记卡 </td>
+                                               <td colspan="3">信用卡</td>
+                                           </tr>
+                                           <tr>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                               <td>客户类型/支付类型</td>
+                                               <td>单笔限额</td>
+                                               <td>日累计限额</td>
+                                           </tr>
+                                           <tr>
+                                                <td rowspan="3">东亚银行</td>
+                                                <td>手机动态密码用户</td>
+                                                <td>5000元</td>
+                                                <td>2万</td>
+                                                <td rowspan="3">信用卡</td>
+                                                <td>500</td>
+                                                <td>500</td>
+                                           </tr>
+                                           <tr>
+                                                <td>数字整数</td>
+                                                <td>5万</td>
+                                                <td>20万</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                           </tr>
+                                            <tr>
+                                                <td>USBkey用户</td>
+                                                <td>100万</td>
+                                                <td>100万</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                           </tr>
+                                       </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prompted">
+                            <h6>温馨提示：</h6>
+                            <p>1、为了您的资金安全，请您在充值之前先完成实名登记；</p>
+                            <p>2、单笔充值最低1００元，具体充值最高限额依据各银行限额为准；</p>
+                            <p>3、其他问题请查看充值帮助，如有疑问请联系客服。</p>
+                        </div>
+                   </div>
+               </div>
+           </div>
+        </div>
+
+
+        <!-- 页脚 -->
+        <div class="footer">
+            <div class="footer_content">
+                <div class="footer_content_left">
+                    <ul class="logos">
+                        <li>
+                            <a href="http://webscan.360.cn/index/checkwebsite/url/www.92tou.com" target="_bank">
+                                <img src="images/360safe.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="links">
+                        <a href="http://92tou.com/index/toAboutUs">公司介绍</a> |
+                        <a href="http://92tou.com/index/toAboutUsContactUs">联系我们</a> |
+                        <a href="http://92tou.com/index/toAboutUsRegister">服务条款</a> |
+                        <a href="http://92tou.com/index/toAboutUsQuestion">帮助中心</a>
+                        <!-- <a href="javascript:void(0)">意见反馈</a> -->
+                    </div>
+                    <p class="copyright">深圳市万利互联网金融有限公司 Copyright Reserved 2016-2017|粤ICP备16017677号-1</p>
+                </div>
+                <div class="footer_content_right">
+                    <div class="servicemethod">
+                        <p>联系我们：（9:00-21:00）</p>
+                        <p>客服电话：400 800 546</p>
+                        <p style="font-size:12px;">商务洽谈合作：kefu@92tou.com</p>
+                    </div>
+                    <div class="gongzhonghao">
+                        <div class="xinlang">
+                            <img src="images/sinaweibocode.jpg">
+                            <p>关注我们的微博</p>
+                        </div>
+                        <div class="gzh">
+                            <img src="images/fuwuhao.jpg">
+                            <p>关注我们的微信</p>
+                        </div>
+                        <div class="QQ">
+                            <img src="images/qq2.png">
+                            <p>关注我们的QQ群</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/headerAndnav.js" charset="utf-8"></script>
+    <script src="js/recharge.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(function(){
+            // 左侧菜单
+            $(".list_title").click(function(){
+                $(".list_title").removeClass("menu_active");
+                $(this).addClass("menu_active");
+                $(".list_title i").hide();
+                $(this).find("i").show();
+            })
+            $(".item").click(function(){
+                $(".item").removeClass("list_row_active");
+                $(this).addClass("list_row_active")
+            })
+            var trs = $("tr");
+            for (var i = 0; i < trs.length; i++) {
+                if (i%2 == 0) {
+                    trs.eq(i).addClass("odd");
+                }
+            }
+
+        })
+
+
+
+
+
+    </script>
+</html>

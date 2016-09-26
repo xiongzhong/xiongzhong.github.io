@@ -1,4 +1,6 @@
-
+.main {
+	margin-bottom: 80px;
+}
 .main_container {
 	background-color: rgb(241, 242, 244);
 	height: 100%;
@@ -96,7 +98,7 @@
 	margin: 0 26px;
 }
 .main_container .user_r .userinfo p span {
-	color: red;
+	color: #FF5256;
 	font-size: 22px;
 	margin-right: 10px;
 }

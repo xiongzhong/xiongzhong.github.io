@@ -9,7 +9,7 @@ html,body {
 	width: 1200px;
 	min-width: 1200px;
 	margin: 0 auto;
-	margin-bottom: 70px;
+	margin-bottom: 50px;
 }
 .container .location {
 	padding: 25px 9px;
@@ -213,9 +213,8 @@ html,body {
 }
 .radio_btn {
 	display: inline-block;
-	width: 16px;
-	height: 16px;
-	box-sizing: border-box;
+	width: 14px;
+	height: 14px;
 	background: #DEDEDE;
 	border: 1px solid #A8A8A8;
 	border-radius: 2px;
@@ -249,6 +248,7 @@ html,body {
 	width: 100%;
 	border-bottom: 1px solid #E6E6E6;
 	padding-left: 20px;
+	position: relative;
 }
 .car_details_title {
 	display: inline-block;
@@ -267,16 +267,11 @@ html,body {
 	margin-bottom: 30px;
 }
 .details_list1,.details_list2,.details_list3,.details_list4 {
-	/*width: 25%;*/
 	float: left;
 }
 .details_list1 {
 	width: 400px;
 	text-indent: 47px;
-}
-.details_list2 {
-
-	/*text-indent: 70px;*/
 }
 .details_list3 {
 	text-indent: 115px;
@@ -296,6 +291,7 @@ html,body {
 	width: 100%;
 	margin: 40px 0 70px 0;
 	overflow: hidden;
+
 }
 .car_photos .car_img {
 	width: 200px;
@@ -311,14 +307,11 @@ html,body {
 .car_proof {
 	width: 100%;
 	border: none;
-	position: relative;
 }
-.car_proof::after{
-	content: "";
+.car_details i {
 	position: absolute;
 	top: 33px;
-	left: 0;
-	display: block;
+	left: 20px;
 	width: 115px;
 	height: 1px;
 	background-color: #FF5256;
@@ -375,7 +368,8 @@ html,body {
 .invest_record ul li>span:first-child + span + span {
 	width: 177px;
 }
-.invest_record ul .table_row:nth-child(even) {
+
+.odd {
 	height: 48px;
 	background: #F8F8F8;
 	border-bottom: 1px solid #F2F2F2;

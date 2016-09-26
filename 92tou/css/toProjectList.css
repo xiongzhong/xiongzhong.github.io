@@ -1,0 +1,199 @@
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+.head_nav {
+	width: 100%;
+	background-color: #FBFCFC;
+	margin-top: 30px;
+	font-size: 18px;
+	color: #3C3C3C;
+}
+.head_nav a {
+	float: left;
+	padding: 2px 10px;
+	margin-top: 16px;
+	color: #3C3C3C;
+	text-decoration: none;
+	margin-right: 45px;
+}
+.head_nav a.on {
+	color: #fff;
+	background-color: #FF7A21;
+	border-radius: 4px;
+}
+.head_nav .one_nav {
+	border-bottom: 1px dashed #E6E6E6;
+}
+.head_nav .two_nav {
+	border-bottom: 1px solid #E6E6E6;
+}
+.head_nav .one_nav, .head_nav .two_nav {
+	height: 55px;
+}
+.head_nav .one_nav .nav_icon1 {
+	float: left;
+	background: url(../images/bg.png) no-repeat -88px -91px;
+	width: 44px;
+	height: 40px;
+	margin-top: 4px;
+	margin-left: 9px;
+}
+.head_nav .two_nav .nav_icon2 {
+	float: left;
+	background: url(../images/bg.png) no-repeat -417px -97px;
+	width: 44px;
+	height: 28px;
+	margin-top: 11px;
+	margin-left: 9px;
+}
+.nav_title {
+	float: left;
+	width: 111px;
+	padding-left: 37px;
+	margin-left: 16px;
+	margin-top: 18px;
+	position: relative;
+}
+.nav_title::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: 0;
+	height: 16px;
+	width: 2px;
+	background: #FF4F3F;
+}
+.main {
+	width: 1200px;
+	margin-top: 30px;
+	padding-top: 26px;
+	background-color: #FFF;
+	overflow: hidden;
+	padding-bottom: 111px;
+}
+.car_box {
+	position: relative;
+	width: 547px;
+	height: 230px;
+	margin: 0 25px;
+	margin-bottom: 25px;
+	border: 1px solid #E4E4E4;
+	border-radius: 8px;
+	float: left;
+}
+.car_box:hover {
+	box-shadow: 0 0 7px rgba(23, 23, 23, 0.3);
+}
+.car_type {
+	width: 295px;
+	height: 34px;
+	background-color: #FFF7E7;
+	border-radius: 8px;
+	line-height: 34px;
+	text-align: center;
+	font-size: 18px;
+	color: #FFA90C;
+	float: left;
+	margin-top: 17px;
+	margin-left: 22px;
+}
+.title_num {
+	position: absolute;
+	top: 0;
+	right: 28px;
+	background: url(../images/8.png) no-repeat center center;
+	width: 78px;
+	height: 32px;
+	text-align: center;
+	color: #23C49A;
+}
+.sum {
+	clear: both;
+	width: 100%;
+	border-bottom: 1px dashed #DDDDDD;
+	overflow: hidden;
+	padding-top: 27px;
+	padding-bottom: 20px;
+}
+.sum div {
+	float: left;
+	width: 136px;
+	text-align: center;
+}
+.sum div p {
+	font-size: 16px;
+	color: #333333;
+	line-height: 30px;
+}
+.sum div em {
+	font-size: 16px;
+}
+.sum div span {
+	font-size: 14px;
+	color: #A5A5A5;
+}
+.start_sum,.rent {
+	font-size: 18px;
+}
+.progress {
+	float: left;
+	width: 316px;
+	height: 67px;
+	margin-left: 30px;
+	padding-top: 12px;
+}
+.progress p {
+	overflow: hidden;
+	font-size: 12px;
+	color: #A5A5A5;
+}
+#progress_box {
+	width: 100%;
+	height: 9px;
+	background-color: #E6E6E6;
+	border-radius: 4px;
+	margin: 5px 0;
+	position: relative;
+}
+#progress_box .yellow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 30%;
+	height: 100%;
+	background-color: #FC8026;
+}
+a.invest_btn {
+	float: left;
+	width: 123px;
+	height: 43px;
+	text-align: center;
+	line-height: 43px;
+	border-radius: 2px;
+	font-size: 18px;
+	margin-left: 53px;
+	margin-top: 12px;
+	text-decoration: none;
+	color: #FFF;
+}
+.start {
+	background-color: #F54434;
+}
+.continue {
+	background-color: #FF8F13;
+}
+.end {
+	background-color: #C9C9C9;
+}
+.footer {
+	margin-top: 0;
+}
+.progress .fh_sum {
+	padding-top: 13px;
+	font-size: 18px;
+}
+.progress .fh_sum em {
+	color: #333333;
+}

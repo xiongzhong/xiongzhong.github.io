@@ -1,0 +1,93 @@
+
+.fr{ float:right; text-align:center; }
+.user_contain_r {
+	height: 747px;
+	width: 920px;
+	padding: 0;
+	padding-left: 16px;
+	padding-top: 5px;
+	margin-bottom: 74px;
+	background-color: #fff;
+	color: rgb(151, 151, 161);
+	border: 1px solid #E6E6E6;
+}
+.user_contain_r .invest_title {
+	height: 50px;
+	line-height: 50px;
+	text-align: left;
+	color: rgb(151, 151, 161);
+	border-bottom: 1px solid rgb(215, 217, 218);
+}
+.user_contain_r .invest_title span {
+	display: inline-block;
+	border-bottom: 1px solid red;
+	font-size: 16px;
+	color: #959595;
+}
+.invite_code {
+	font-size:14px;
+	color:#5E5E5E;
+	text-align:left;
+	margin-top:20px;
+	margin-left:33px;
+}
+.invite_text {
+	font-size:12px;
+	width:628px;
+	height:57px;
+	padding: 14px 19px 14px 33px;
+	text-align:left;
+	float:left;
+	color: #C9C9C9;
+	margin-top:6px;
+	margin-bottom:20px;
+	line-height: 20px;
+	overflow-y: hidden;
+	border: 1px solid #E6E6E6;
+	overflow:hidden;
+}
+.copy {
+	float: left;
+	background: url(../images/copy_btn.png) no-repeat;
+	width: 123px;
+	height: 43px;
+	margin-left: 22px;
+	margin-top: 25px;
+}
+.invite_record_list .record {
+	margin: 0;
+	margin-top: 18px;
+}
+.record {
+	margin-top: 15px;
+	margin-left: 19px;
+	width: 899px;
+	text-align: center;
+	border: 1px solid #E6E6E6;
+	font-size: 14px;
+	color: #5E5E5E;
+	border-collapse:collapse;
+}
+.record td {
+	padding: 0;
+	margin: 0;
+    border:1px solid #CCCCCC;
+}
+.record tr {
+	height: 48px;
+}
+.record tr:nth-child(odd) {
+	height: 48px;
+	background: #F8F8F8;
+	border-top: 1px solid #F2F2F2;
+	border-bottom: 1px solid #F2F2F2;
+}
+.odd {
+	height: 48px;
+	background: #F8F8F8;
+	border-top: 1px solid #F2F2F2;
+	border-bottom: 1px solid #F2F2F2;
+}
+.record tr.one_row {
+	background: #FFF4EC;
+}
