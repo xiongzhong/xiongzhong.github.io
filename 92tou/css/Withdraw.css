@@ -1,0 +1,128 @@
+.container {
+	width: 1200px;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.fr{ float:right; text-align:center; }
+.user_contain_r {
+    width: 900px;
+    padding: 20px;
+    margin-bottom: 74px;
+    background-color: #fff;
+    color: rgb(151, 151, 161);
+	border: 1px solid #E6E6E6;
+}
+.container a {
+	text-decoration: none;
+}
+.container a:hover {
+	text-decoration: none;
+}
+.RightBox .titleBox{ height: 36px; border-bottom: 1px solid #e3e3e3; margin-bottom: 20px;}
+.RightBox .titleBox li{ float: left; width: auto;height: 36px; line-height: 24px; margin-right: 20px; font-size: 16px; cursor: pointer;}
+.RightBox .titleBox li a{font-size: 16px; color: #959595;}
+.RightBox .titleBox li.cur{border-bottom: 1px solid red; height: 35px;}
+.RightBox .titleBox li.cur a{height: 35px; color: #FF5256;}
+.border1px {
+	width: 898px;
+	height: 334px;
+	padding-top: 20px;
+	box-sizing: border-box;
+	font-size: 14px;
+	color: #555555;
+	text-align: center;
+	border: 1px solid #E6E6E6;
+	padding-bottom: 15px;
+}
+.center {
+	margin-left: 243px;
+	text-align: left;
+}
+.center .form_box input {
+	border: 1px solid #FFFFFF;
+	border: none;
+	outline: none;
+	width: 243px;
+	height: 41px;
+	line-height: 43px;
+	text-indent: 9px;
+	font-family: "微软雅黑";
+	position: absolute;
+	top: 2px;
+	right: 0;
+}
+.center .form_box {
+	height: 51px;
+}
+.center .form_box .input_box {
+	width: 359px;
+	height: 41px;
+	border: 1px solid #E6E6E6;
+	border-radius: 8px;
+	padding: 4px 0;
+	float: left;
+	position: relative;
+}
+.center .form_box .news {
+	float: left;
+	line-height: 51px;
+	text-indent: 30px;
+	color: #EF3B40;
+	display: none;
+}
+.center .form_box .input_box span {
+	float: left;
+	width: 106px;
+	height: 100%;
+	text-align: center;
+	border-right: 1px solid #E6E6E6;
+	line-height: 43px;
+}
+.usable_sum {
+	padding: 37px 0;
+	padding-left: 10px;
+}
+.usable_sum .money_num {
+	font-size: 18px;
+	color: #EF3B40;
+}
+.usable_sum .unit {
+	color: #999999;
+}
+.border1px .drawMoney {
+	float: left;
+	background: url(../images/qrtx.png) no-repeat;
+	background-size: 100% 100%;
+	margin-left: 358px;
+	width: 122px;
+	height: 43px;
+}
+.prompted {
+    width: 863px;
+	padding: 15px 0;
+	padding-left: 33px;
+    text-align: left;
+    background-color: #FFFAF5;
+    font-size: 12px;
+    color: #93888E;
+    border: 1px solid #E6E6E6;
+    line-height: 20px;
+	margin-top: 14px;
+}
+.prompted h6 {
+    font-size: 14px;
+    color: #5E5E5E;
+    font-weight: normal;
+    line-height: 25px;
+}
+.prompted p {
+	text-indent: 20px;
+}
+.prompted .first_row {
+	text-indent: 0;
+}
+
+.on {
+	box-shadow: 0 0 7px rgba(230, 137, 16, 0.48);
+}

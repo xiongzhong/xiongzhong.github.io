@@ -1,0 +1,399 @@
+html,body {
+	width: 100%;
+	min-width: 1280px;
+}
+.nav {
+	border-bottom: 2px solid #E1E5E6;
+}
+.container {
+	width: 1200px;
+	min-width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.container .location {
+	padding: 25px 9px;
+	font-size: 14px;
+	color: #999999;
+}
+.container p .now_location {
+	color: #333333;
+}
+
+/*投资详情*/
+.invest_way {
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 45px;
+	background-color: #FFFFFF;
+	overflow: hidden;
+}
+.invest_way .invest_way_lf {
+	width: 677px;
+	height: 312px;
+	border-right: 1px dashed #E1E1E1;
+	float: left;
+	padding-left: 37px;
+}
+
+.car_title {
+	font-size: 18px;
+	color: #4C4C4C;
+	line-height: 1.8;
+	font-weight: normal;
+}
+.sum {
+	width: 100%;
+	margin-top: 25px;
+	overflow: hidden;
+	padding-bottom: 5px;
+}
+.sum .sum_box {
+	width: 32%;
+	float: left;
+	font-size: 16px;
+	color: #5C5C5C;
+}
+.sum .sum_text {
+	color: #999999;
+	line-height: 1.5;
+}
+#total_sum,#rent,#year_revenue {
+	font-size: 36px;
+	line-height: 1.5;
+}
+.progress {
+	margin: 20px 0;
+	overflow: hidden;
+}
+.progress div {
+	float: left;
+	font-size: 14px;
+	color: #999999;
+}
+.progress_txt {
+	width: 75px;
+	line-height: 30px;
+}
+.progress_box {
+	width: 254px;
+	height: 30px;
+}
+#progress_box {
+	width: 100%;
+	height: 9px;
+	border-radius: 4px;
+	background-color: #EFEFEF;
+	margin-top: 10px;
+	position: relative;
+	overflow: hidden;
+}
+#yellow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20%;
+	height: 100%;
+	background: #FC8026;
+}
+.invest_progress {
+	width: 348px;
+	line-height: 30px;
+	overflow: hidden;
+}
+#invest_progress {
+	float: left;
+	text-indent: 14px;
+}
+.invest_progress p {
+	float: right;
+	margin-right: 68px;
+}
+.invest_info {
+	width: 643px;
+	height: 97px;
+	background: #F5F5F5;
+	font-size: 14px;
+	color: #999999;
+	line-height: 48px;
+}
+.invest_info .invest_fl,.invest_rg {
+	text-indent: 30px;
+	float: left;
+	width: 49.9%;
+}
+.invest_info .invest_rg {
+	text-indent: 95px;
+}
+.invest_way .invest_way_rg {
+	width: 406px;
+	float: left;
+	margin-left: 78px;
+	font-size: 14px;
+	color: #999999;
+}
+.usable_sum {
+	margin-top: 20px;
+}
+.usable_sum p {
+	line-height: 50px;
+}
+.usable_sum p #usable_sum,#usable_num {
+	font-size: 18px;
+	color: #FB7A31;
+}
+.usable_sum p .tou_up {
+	text-decoration: none;
+	float: right;
+	color: #FB7A31;
+	margin-right: 105px;
+}
+.shop_num {
+	width: 100%;
+	margin-top: 10px;
+}
+.shop_num .shop_num_txt {
+	padding-bottom: 11px;
+}
+.shop_num .input_box {
+	overflow: hidden;
+}
+.shop_num .input_box span {
+	float: left;
+	width: 34px;
+	height: 34px;
+}
+.shop_num .input_box .add {
+	background: url('../images/bg.png') no-repeat -590px -95px;
+	cursor: pointer;
+}
+.shop_num .input_box .cut {
+	background: url('../images/bg.png') no-repeat -643px -95px;
+	cursor: pointer;
+}
+#shop_num {
+	margin: 0 5px;
+	margin-top: 1px;
+	float: left;
+	width: 220px;
+	height: 27px;
+	text-align: center;
+	font-size: 18px;
+	color: #999999;
+}
+.invest_btn {
+	width: 100%;
+	height: 50px;
+	text-align: left;
+	padding-top: 20px;
+}
+.invest_btn #invest_btn {
+	display: inline-block;
+	width: 303px;
+	height: 43px;
+	line-height: 43px;
+	background: #FF4F3F;
+	border-radius: 2px;
+	text-decoration: none;
+	font-size: 18px;
+	color: #FFFFFF;
+	text-align: center;
+}
+.serve_pact {
+	margin-top: 20px;
+	font-size: 12px;
+}
+.serve_pact p {
+	display: inline-block;
+	zoom:1;
+	*display:inline;
+	width: 290px;
+	height: 16px;
+	margin-left: 5px;
+}
+.radio_btn {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: #DEDEDE;
+	border: 1px solid #A8A8A8;
+	border-radius: 2px;
+	vertical-align: bottom;
+}
+.on {
+	display: inline-block;
+	background: url('../images/bg.png') no-repeat -353px -161px;
+	width: 16px;
+	height: 16px;
+	border: none;
+}
+#pact_txt {
+	color: #71A5EC;
+	text-decoration: none;
+}
+.invest_plan {
+	font-size: 12px;
+	color: #FF6700;
+	margin-left: 50px;
+}
+.car_details {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 40px 4px 0 0;
+	margin-top: 17px;
+	background-color: #FFF;
+	overflow: hidden;
+}
+.shop_details {
+	width: 100%;
+	border-bottom: 1px solid #E6E6E6;
+	padding-left: 20px;
+	position: relative;
+}
+.car_details_title {
+	display: inline-block;
+	width: 112px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #FF5256;
+	font-size: 16px;
+	color: #959595;
+	box-sizing: border-box;
+}
+.details_content {
+	width: 100%;
+	font-size: 14px;
+	color: #959595;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.details_list1,.details_list2,.details_list3,.details_list4 {
+	float: left;
+}
+.details_list1 {
+	width: 400px;
+	text-indent: 47px;
+}
+.details_list3 {
+	text-indent: 115px;
+}
+.details_list4 {
+	text-indent: 98px;
+}
+.details_table {
+	margin: 40px 0;
+}
+
+.details_table em {
+	color: #5E5E5E;
+	text-align: right;
+}
+.car_photos {
+	width: 100%;
+	margin: 40px 0 70px 0;
+	overflow: hidden;
+
+}
+.car_photos .car_img {
+	width: 200px;
+	height: 140px;
+	float: left;
+	margin: 0 4.05%;
+	border: 1px solid #E6E6E6;
+}
+.car_photos .car_img img {
+	width: 100%;
+	height: 100%;
+}
+.car_proof {
+	width: 100%;
+	border: none;
+}
+.car_details i {
+	position: absolute;
+	top: 33px;
+	left: 20px;
+	width: 115px;
+	height: 1px;
+	background-color: #FF5256;
+}
+.certificate {
+	width: 100%;
+	padding: 0 30px;
+	overflow: hidden;
+	margin: 40px 0;
+}
+.certificate .certificate_img {
+	float: left;
+	margin: 0 13px;
+}
+.certificate .certificate_img img {
+	width: 200px;
+	height: 140px;
+	border: 1px solid #E6E6E6;
+}
+.certificate .certificate_img p {
+	margin: 18px 0;
+	font-size: 14px;
+	color: #5E5E5E;
+	text-align: center;
+}
+.invest_record {
+	width: 837px;
+	margin: 42px 195px 62px 166px;
+
+	border: 1px solid #E6E6E6;
+	font-size: 14px;
+	color: #9999A5;
+}
+.invest_record ul li {
+	height: 50px;
+	line-height: 50px;
+}
+.invest_record ul .table_head {
+	background: #FFF4EC;
+	color: #5E5E5E;
+	text-align: left;
+}
+.invest_record ul li span {
+	display: inline-block;
+	height: 100%;
+}
+.invest_record ul li>span:first-child {
+	width: 280px;
+	padding-left: 54px;
+}
+.invest_record ul li>span:first-child + span {
+	width: 310px;
+}
+.invest_record ul li>span:first-child + span + span {
+	width: 177px;
+}
+
+.odd {
+	height: 48px;
+	background: #F8F8F8;
+	border-bottom: 1px solid #F2F2F2;
+	border-top: 1px solid #F2F2F2;
+}
+.common_problem {
+	padding-bottom: 91px;
+}
+.common_problem ul li {
+	color: #5E5E5E;
+	padding: 28px 0;
+	border-bottom: 1px dashed #DDDDDD;
+}
+
+.problem_title {
+	line-height: 40px;
+	text-indent: 18px;
+	font-size: 16px;
+}
+.problem_text {
+	padding-left: 52px;
+	font-size: 14px;
+	line-height: 25px;
+}
+.invest_flow {
+	padding: 64px 55px 87px 42px;
+}

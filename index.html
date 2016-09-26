@@ -1,23 +1,227 @@
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <title></title>
-        <style media="screen">
-            * {
-                margin: 0;
-                padding: 0;
-            }
+<!--[if lt IE 7]>    <html lang="en-US" dir="ltr" class=" lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>       <html lang="en-US" dir="ltr" class="lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>       <html lang="en-US" dir="ltr" class="lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>       <html lang="en-US" dir="ltr" class="lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en-US" dir="ltr" class="no-ie"> <!--<![endif]-->
+<head>
+	<!--[if IE]>
+	<meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1" />
+	<![endif]-->
+	<meta charset="UTF-8" />
+	<title>熊重的主页</title>
+	<meta name="viewport" content="width=600" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png" />
 
-        </style>
-    </head>
-    <body>
+</head>
+<body class="preload impress-not-supported">
+	<!--*** Loading animated ***-->
+	<div class="loading-panel">
+		<div class="loading">
+			<div id="loading-gif"></div>
+		</div>
+	</div>
 
-        <h1>我是首页</h1>
+	<!--*** Menu ***-->
+	<div class="container-menu">
+		<nav class="mainmenu">
+			<ul>
+				<li>
+					<a class="fg-bgc" href="#profile">
+						<span class="img-menu" id="about-ico"></span>
+						<span class="txt-menu">关于我</span>
+					</a>
+				</li>
+				<li>
+					<a class="fg-bgc" href="#resume">
+						<span class="img-menu" id="resume-ico"></span>
+						<span class="txt-menu">简历</span>
+					</a>
+				</li>
+				<li>
+					<a class="fg-bgc" href="#portfolio">
+						<span class="img-menu" id="portfolio-ico"></span>
+						<span class="txt-menu">项目经验</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
 
-    </body>
-    <script type="text/javascript">
+	<!--*** Pages ***-->
+	<div id="impress">
+		<!--*** Profile ***-->
+		<section class="profile_container cover step" id="profile" data-x="0" data-y="0">
+			<h1 class="cover"><span class="h1-text fg-bgc">个人简介</span><span class="h1-corner fg-bdc"></span></h1>
+			<figure class="me left">
+				<div id="myqr">扫我的二维码</div>
+				<div id="myimg"></div>
+			</figure>
+			<section class="personal-info right">
+				<!-- Personal info section -->
+				<ul>
+					<li>
+						<div class="label fg-bgc">姓名</div>
+						<div class="corner fg-bdc"></div>
+						<div class="text">熊重</div>
+					</li>
+					<li>
+						<div class="label fg-bgc">年龄</div>
+						<div class="corner fg-bdc"></div>
+						<div class="text">24</div>
+					</li>
+					<li>
+						<div class="label fg-bgc">籍贯</div>
+						<div class="corner fg-bdc"></div>
+						<div class="text">湖北咸宁</div>
+					</li>
+					<li>
+						<div class="label fg-bgc">电话号码</div>
+						<div class="corner fg-bdc"></div>
+						<div class="text">187 7126 8081</div>
+					</li>
+					<li>
+						<div class="label fg-bgc">邮箱</div>
+						<div class="corner fg-bdc"></div>
+						<div class="text">xiongzhong92@126.com</div>
+					</li>
+					<li>
+						<div class="label fg-bgc">个人主页</div>
+						<div class="corner fg-bdc"></div>
+						<div class="text"><a href="https://xiongzhong.github.io" target="_blank">xiongzhong.github.io</a></div>
+					</li>
+				</ul>
+			</section>
+			<section class="aboutme">
+				<hgroup>
+					<h2 class="f30">熊重</h2>
+					<h2 class="f20">前端开发工程师</h2>
+				</hgroup>
+				<p>做事认真细心，有良好的沟通能力及团队合作精神。具备清晰的思路、合理的做事方式和处理问题方法，有比较强的动手能力。能独立编写reset.css，对JavaScript面向对象编程也比较熟悉，喜欢前端开发。</p>
+			</section>
+		</section>
 
-    </script>
+		<!--*** Resume ***-->
+		<section class="resume_container cover step" id="resume" data-x="1000" data-y="-500" data-z="-1500" data-rotate="10" >
+			<h1 class="cover"><span class="h1-text fg-bgc">个人简历</span><span class="h1-corner fg-bdc"></span></h1>
+			<!-- EXPERIENCE section -->
+			<section class="edu left">
+				<h2>工作经历</h2>
+				<ul class="edu-list">
+					<li>
+						<h3>前端开发工程师</h3>
+						<p>北京启明天创科技有限公司</p>
+						<span>2015年6月-2016年7月</span>
+					</li>
+					<li>
+						<h3>前端开发工程师</h3>
+						<p>北京云思畅想科技有限公司</p>
+						<span>2014年11月-2015年5月</span>
+					</li>
+				</ul>
+			</section>
+
+			<!-- EDUCATION section -->
+			<section class="job">
+				<h2>教育经历</h2>
+				<ul class="exp-list">
+					<li>
+						<h3>咸宁职业技术学院</h3>
+						<p>机电一体化专业</p>
+						<span>2011年9月-2014年6月</span>
+					</li>
+				</ul>
+			</section>
+
+				<!-- SKILLS section -->
+			<section class="skills">
+				<div class="graph-skill">
+
+					<ul>
+						<li class="fig1"><span class="bar-title">85</span></li>
+						<li class="fig2"><span class="bar-title">85</span></li>
+						<li class="fig3"><span class="bar-title">30</span></li>
+						<li class="fig4"><span class="bar-title">70</span></li>
+						<li class="fig5"><span class="bar-title">70</span></li>
+						<li class="fig6"><span class="bar-title">30</span></li>
+					</ul>
+				</div>
+				<div class="graph-title">
+					<ul>
+
+						<li><span class="graph-lable fig1"></span>HTML5</li>
+						<li><span class="graph-lable fig2"></span>CSS3</li>
+						<li><span class="graph-lable fig3"></span>nodeJS</li>
+						<li><span class="graph-lable fig4"></span>JavaScript</li>
+						<li><span class="graph-lable fig5"></span>jQuery</li>
+						<li><span class="graph-lable fig6"></span>PHP</li>
+					</ul>
+				</div>
+			</section>
+		</section>
+
+		<!--*** Portfolio 1/2 ***-->
+		<section class="portfolio_container portfolio1 cover step" id="portfolio" data-x="-300" data-y="-1200" data-z="-3000">
+			<h1 class="cover"><span class="h1-text fg-bgc">项目介绍一</span><span class="h1-corner fg-bdc"></span></h1>
+			<h2 class="project-title"><a href="http://coffee.foamka.me/">疯咖</a></h2>
+		    <div class="cover" id="portfolio-list">
+				<h3>项目描述：</h3>
+				<p>
+					疯咖网是上海一家线上线下提供上门咖啡服务的公司介绍其公司，以及其业务的网站主要有首页、加入我们和加盟合作三个页面。
+				</p>
+				<h3>项目职责：</h3>
+				<ol>
+					<li>1.	配合团队根据设计图完成产品需求；</li>
+					<li>2.	参与项目讨论和前端方案实现；</li>
+					<li>3.	编写代码；</li>
+					<li>4.	协助后台程序员完成功能镶嵌和调试；</li>
+				</ol>
+				<h3>技术要点：</h3>
+				<ol>
+					<li>1.	使用Atom、Sublime、PS等开发工具，使用IE、Chrome、Firefox等浏览器做兼容性测试；</li>
+					<li>2.	使用Bootstrap框架，使用JQ和JavaScript编写动态页面，使用百度地图API；</li>
+					<li>3.	运用ajax完成前后台数据交互；</li>
+				</ol>
+		    </div>
+		</section>
+
+		<!--*** Portfolio 2/2 ***-->
+		<section class="portfolio_container portfolio2 cover step" id="portfolio2" data-x="-300" data-y="-1200" data-z="-3200" data-rotate-y="180">
+			<h1 class="cover"><span class="h1-text fg-bgc">项目介绍二</span><span class="h1-corner fg-bdc"></span></h1>
+
+            <h2 class="project-title">大理啤酒（微信轻应用）</h2>
+			<!-- PORTFOLIO-LIST section -->
+			<div class="cover" id="portfolio-list2">
+				<h3>项目描述：</h3>
+				<p>大理啤酒是云南大理啤酒股份有限公司，为其新装上市做的一个宣传的小游戏。</p>
+				<h3>项目职责：</h3>
+				<ol>
+					<li>1.	根据设计图完成产品需求；</li>
+					<li>2.	参与项目讨论和前端方案实现；</li>
+					<li>3.	编写代码；</li>
+				</ol>
+				<h3>技术要点：</h3>
+				<ol>
+					<li>1.	使用H5制作移动端页面；</li>
+					<li>2.	移动端的页面适配和各种设备的兼容；</li>
+					<li>3.	JavaScript面向对象编程</li>
+				</ol>
+			</div>
+		</section>
+	</div>
+
+	<!--*** Scripts ***-->
+	<script type="text/javascript" src="script/jquery.min.js"></script>
+	<!--[if !IE]><!-->
+		<script type="text/javascript" src="script/impress.js"></script>
+	<!--<![endif]-->
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.3/jquery.colorbox-min.js"></script>
+	<script type="text/javascript" src="script/script.js"></script>
+</body>
 </html>

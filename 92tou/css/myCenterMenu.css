@@ -1,0 +1,109 @@
+.container {
+	width: 1200px;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.container .menu {
+	width: 240px;
+	background-color: #FFFFFF;
+	border: 1px solid #E6E6E6;
+	float: left;
+	font-size: 14px;
+	overflow: hidden;
+	position: relative;
+	color: #5E5E5E;
+	margin-bottom: 30px;
+}
+.menu .list_title {
+	height: 53px;
+	line-height: 53px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #E6E6E6;
+	border-top: 1px solid #E6E6E6;
+	font-size: 16px;
+	position: relative;
+	padding-left: 31px;
+}
+.menu .list_title i {
+	position: absolute;
+	top: 12px;
+	left: 16px;
+	width: 6px;
+	height: 31px;
+	background-color: #FF5256;
+	display: none;
+}
+.menu .list_title span {
+	float: left;
+}
+.menu .list_row {
+	width: 100%;
+	height: 42px;
+	line-height: 41px;
+	text-indent: 61px;
+
+}
+.menu .list_row:hover {
+	background: #FFF6F0;
+	color: #FF7A21;
+}
+.menu a {
+	color: inherit;
+	color:expression(this.parentNode.currentStyle.color);
+	width: 100%;
+	text-decoration: none;
+	float: left;
+}
+.menu .my_account {
+	border-bottom: none;
+}
+.menu .my_msg {
+	border: none;
+}
+.menu .list_row_active{
+	color: #FF7A21;
+	background-color: #FFF6F0;
+}
+.menu .list_row_active a {
+	color: #FF7A21;
+}
+.list_title .my_account_icon {
+	background: url(../images/myaccount.png) no-repeat;
+	width: 23px;
+	height: 26px;
+	margin-top: 13px;
+	margin-right: 7px;
+}
+.list_title .my_invest_icon {
+	background: url(../images/hyarrow.png) no-repeat;
+	width: 23px;
+	height: 23px;
+	margin-top: 13px;
+	margin-right: 7px;
+}
+.list_title .my_money_icon {
+	background: url(../images/hycorns.png) no-repeat;
+	width: 23px;
+	height: 23px;
+	margin-top: 18px;
+	margin-right: 7px;
+}
+.list_title .msg_center_icon {
+	background: url(../images/msgcenter.png) no-repeat;
+	width: 23px;
+	height: 23px;
+	margin-top: 16px;
+	margin-right: 7px;
+}
+.list_title .my_msg_icon {
+	background: url(../images/hyheader.png) no-repeat;
+	width: 23px;
+	height: 23px;
+	margin-top: 16px;
+	margin-right: 7px;
+}
+.menu_active a {
+	color: #FF5256;
+	font-weight: bold;
+}

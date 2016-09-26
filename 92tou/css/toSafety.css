@@ -1,0 +1,89 @@
+.container {
+	width: 100%;
+}
+.container .safe1 {
+	background: url(../images/safe1.jpg);
+	width: 100%;
+	height: 380px;
+}
+.container .safe2 {
+	background: url(../images/safe2.jpg);
+	width: 100%;
+	height: 510px;
+}
+.container .safe3 {
+	background: url(../images/safe3.jpg);
+	width: 100%;
+	height: 476px;
+}
+.container .safe4 {
+	background: url(../images/safe4.jpg);
+	width: 100%;
+	height: 651px;
+}
+.container .safe5 {
+	background: url(../images/safe5.jpg);
+	width: 100%;
+	height: 324px;
+}
+.container .safe4 .center {
+	width: 977px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-top: 410px;
+	padding-left:20px;
+}
+.container .safe4 .imgBox {
+	width: 200px;
+	float: left;
+	margin: 0 2%;
+	cursor: pointer;
+}
+.container .safe4 .imgBox p {
+	text-align: center;
+	font-size: 18px;
+	color: #666679;
+	line-height: 35px;
+}
+.container img {
+	width: 100%;
+}
+.container .safe {
+	background-position: top center;
+}
+.container .bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000\9;/*IE*/
+	background: rgba(0,0,0,0.5);/*firefox、chrome*/
+	filter: alpha(opacity=50);/*IE*/
+	z-index: 300;
+	display: none;
+}
+#img1, #img2, #img3, #img4 {
+	width: 1000px;
+	height: 800px;
+	position: fixed;
+	z-index: 301;
+}
+#img1 {
+	top: -100%;
+	left: -100%;
+}
+#img2 {
+	top: 50%;
+	left: 50%;
+	width: 0;
+}
+#img3 {
+	top: 100%;
+	left: 50%;
+	margin-left: -500px;
+}
+#img4 {
+	top: 100%;
+	left: 100%;
+}

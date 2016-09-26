@@ -1,0 +1,63 @@
+/*页脚*/
+.footer {
+    width: 100%;
+    background-color: #323232;
+    color: #B3B5BA;
+    padding-top: 20px;
+    overflow: hidden;
+}
+.footer_content {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.footer_content_left {
+    width: 50%;
+    float: left;
+}
+.footer_content_left .logos {
+    height: 60px;
+    line-height: 60px;
+}
+.footer_content_left .links {
+    margin-bottom: 27px;
+}
+.footer_content_left .links a {
+    font-size: 14px;
+    color: #B3B5BA;
+
+}
+.copyright {
+    margin-bottom: 27px;
+    font-size: 12px;
+    color: #B3B5BA;
+}
+.footer_content_right {
+    width: 50%;
+    overflow: hidden;
+    padding-top: 2px;
+}
+.servicemethod {
+    float: left;
+    font-size: 14px;
+    line-height: 45px;
+}
+.gongzhonghao {
+    overflow: hidden;
+    padding-left: 95px;
+}
+.gongzhonghao div {
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    float: left;
+}
+.gzh {
+    margin: 0 10px;
+}
+.gongzhonghao div img {
+    width: 100%;
+}
+.gongzhonghao div p {
+    font-size: 13px;
+}
